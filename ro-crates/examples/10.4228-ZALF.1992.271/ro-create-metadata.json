@@ -1,0 +1,149 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "files/v004_crop_carbon_nitrogen.csv"
+        },
+        {
+          "@id": "files/v004_crop_ontogenesis_biomass.csv"
+        }
+      ],
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0000-0002-3620-3171"
+      },
+      "schema:creditText": "Mirschel, Wilfried; Schindler, Uwe; Hufnagel, Johannes; Barkusky, Dietmar; Dittmar, Sigrid; Voigt, Carola; Laacke, Liane (2014): Coherent multivariable 6-year field trial data set for agro-ecosystem model verification and validation from Müncheberg experimental station, Leibniz-Zentrum für Agrarlandschaftsforschung (ZALF) e.V.[doi: 10.4228/ZALF.1992.271]",
+      "description": "For the intensive agro-management level a 6-year (1993-1998) multivariable data set for a 4-field crop rotation located at the Müncheberg Experimental Station with sandy soils (Eutric Cambisol) is documented in detail. Here rainfed and irrigated conditions are taken into account. The soil, weather and crop processes have been intensively monitored. The data set contains coherent soil (water, mineral nitrogen), crop (ontogenesis, biomass, yield, carbon and nitrogen content), weather (meteorological standard parameter) and management (soil tillage, sowing, fertilization, irrigation, harvest) data with different time resolutions. The data set was used for model intercomparison within the crop modelling (CropM) part of the international FACCE MACSUR project.",
+      "editor": {
+        "@id": "https://ror.org/01ygyzs83"
+      },
+      "identifier": "http://doi.org/10.4228/ZALF.1992.271",
+      "about": {
+        "@id": "_:nc238f7608de8496dadf3f24d3b199823b5"
+      },
+      "schema:keyword": [
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_29103"
+        },
+        {
+          "@id": "http://www.eionet.europa.eu/gemet/concept/232"
+        }
+      ],
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "name": "Coherent multivariable 6-year field trial data set for agro-ecosystem model verification and validation from Müncheberg experimental station",
+      "publisher": {
+        "@id": "https://ror.org/01ygyzs83"
+      },
+      "spatialCoverage": {
+        "@id": "_:nc238f7608de8496dadf3f24d3b199823b1"
+      },
+      "temporalCoverage": "1993/1998",
+      "url": "https://open-research-data.zalf.de/SitePages/DatasetInformation.aspx?ord=1992_271",
+      "variableMeasured": [
+        {
+          "@id": "_:nc238f7608de8496dadf3f24d3b199823b3"
+        },
+        {
+          "@id": "_:nc238f7608de8496dadf3f24d3b199823b4"
+        }
+      ]
+    },
+    {
+      "@id": "files/v004_crop_carbon_nitrogen.csv",
+      "@type": "File",
+      "contentSize": "23089",
+      "description": "Table containing crop_carbon_nitrogen measurements",
+      "encodingFormat": "text/csv",
+      "name": "v004_crop_carbon_nitrogen"
+    },
+    {
+      "@id": "files/v004_crop_ontogenesis_biomass.csv",
+      "@type": "File",
+      "contentSize": "23723",
+      "description": "Table containing v004_crop_ontogenesis_biomass measurments",
+      "encodingFormat": "text/csv",
+      "name": "v004_crop_ontogenesis_biomass"
+    },
+    {
+      "@id": "https://ror.org/01ygyzs83",
+      "@type": "Organization",
+      "name": "Leibniz-Zentrum für Agrarlandschaftsforschung (ZALF) e.V."
+    },
+    {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_29103",
+      "@type": "DefinedTerm"
+    },
+    {
+      "@id": "http://www.eionet.europa.eu/gemet/concept/232",
+      "@type": "DefinedTerm"
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b1",
+      "@type": "Place",
+      "geo": {
+        "@id": "_:nc238f7608de8496dadf3f24d3b199823b2"
+      }
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b2",
+      "@type": "GeoShape",
+      "box": "14.12174911, 52.51578495, 14.12385331, 52.51706814"
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b3",
+      "@type": "PropertyValue",
+      "name": "PRECIPITATION_MM",
+      "propertyID": {
+        "@id": "https://agrovoc.fao.org/browse/agrovoc/en/page/c_6161"
+      }
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b4",
+      "@type": "PropertyValue",
+      "name": "TOTAL_NITROGEN_PROZ",
+      "propertyID": {
+        "@id": "https://agrovoc.fao.org/browse/agrovoc/en/page/c_5193"
+      }
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b5",
+      "@type": "https://bioschemas.org/BioChemEntity",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Crop/0.1-TO-BE-CREATED"
+      },
+      "https://bioschemas.org/taxonomicRange": {
+        "@id": "http://aims.fao.org/aos/agrovoc/c_7499"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3620-3171",
+      "@type": "Person",
+      "name": "Wilfried Mirschel"
+    },
+    {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_7499",
+      "@type": "DefinedTerm",
+      "inDefinedTermSet": {
+        "@id": "http://aims.fao.org/aos/agrovoc"
+      }
+    }
+  ]
+}

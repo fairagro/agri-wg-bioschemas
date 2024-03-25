@@ -1,0 +1,84 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "identifier": "10.7910/DVN/M9ZT0F/NKX5XD",
+      "url": "doi:10.7910/DVN/M9ZT0F/NKX5XD",
+      "name": "The Hot Serial Cereal Experiment for modeling wheat response to temperature: field experiments and AgMIP-Wheat multi-model simulations",
+      "description": "TODO",
+      "datePublished": "2018-02-26",
+      "hasPart": [
+        {
+          "@id": "HSC-AgMIP_data/1-Soil and crop mangement/HSC_AgMIP_crop_management_events.txt"
+        }
+      ],
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE"
+      },
+      "about": {
+        "@id": "_:nc238f7608de8496dadf3f24d3b199823b5"
+      },
+      "keyword": [
+        {
+          "@id": "http://www.eionet.europa.eu/gemet/concept/232"
+        }
+      ],
+      "variableMeasured": []
+    },
+    {
+      "@id": "HSC-AgMIP_data/1-Soil and crop mangement/HSC_AgMIP_crop_management_events.txt",
+      "@type": "File",
+      "description": "Table containing crop_carbon_nitrogen measurements",
+      "encodingFormat": "text/plain",
+      "name": "HSC_AgMIP_crop_management_events"
+    },
+    {
+      "@id": "http://www.eionet.europa.eu/gemet/concept/232",
+      "@type": "DefinedTerm"
+    },
+    {
+      "@id": "_:nc238f7608de8496dadf3f24d3b199823b5",
+      "@type": "https://bioschemas.org/BioChemEntity",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Crop/0.1-TO-BE-CREATED"
+      },
+      "https://bioschemas.org/taxonomicRange": [
+        {
+          "@id": "https://agrovoc.fao.org/browse/agrovoc/en/page/c_8373"
+        },
+        {
+          "@id": "https://fsp.ucdavis.edu/seed-catalog/wheat-varieties/Yecora-Rojo"
+        }
+      ]
+    },
+    {
+      "@id": "http://aims.fao.org/aos/agrovoc/c_8373",
+      "@type": "https://bioschemas.org/Taxon",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Taxon/1.0-RELEASE"
+      },
+      "name": "Triticum aestivum",
+      "taxonomicRank": "https://www.wikidata.org/wiki/Q7432"
+    },
+    {
+      "@id": "https://fsp.ucdavis.edu/seed-catalog/wheat-varieties/Yecora-Rojo",
+      "dct:conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Taxon/1.0-RELEASE"
+      },
+      "name": "Yecora roja",
+      "taxonomicRank": "https://www.wikidata.org/wiki/Q767728"
+    }
+  ]
+}
