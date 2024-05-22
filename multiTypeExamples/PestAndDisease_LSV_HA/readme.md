@@ -11,6 +11,11 @@ It includes multiple sheets on management activities of an experiment
 - PSM_konst (year, location, date, BBCH, pesticide name, volume, area)
 - PSM_fakt (year, location name, date, BBCH, pesticide name, volume, area, stage)
 
+## Modelling approach
+- Each of the locations, where experiments were held, is modelled as a Study (following ISAs meaning)
+- Each of the different activities (sowing, tilling, etc.) is modelled as an assay. This also means having different assays for the same acitivity  in different years
+- Each of the assays has one LabProcess, which links to a LabProtocol, that can be shared between LabProcesses
+- Entities (people, locations, etc.) are reused as much as possible by refering to their ids
 
 # Challenges
 ## Study layer

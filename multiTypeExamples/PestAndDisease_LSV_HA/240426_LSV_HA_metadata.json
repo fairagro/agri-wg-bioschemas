@@ -1,0 +1,419 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+	"@id":"investigation_001",
+	"identifier":"investigation_001",
+	"headline":"Headline of the whole investigation",
+	"description":"This is a dataset containing information on different experiments on ...",
+	"alternateName":"LSV_HA_Schaderreger",
+	"creator":{
+		"@context": "https://schema.org/",
+		"@type": "Person",
+		"@id":"person_01",
+		"givenName":"Jane",
+		"familyName":"Doe",
+		"identifier":"https://orcid.org/0000-0002-1825-0097"
+	},
+	"mentions":{
+		"@context": "https://schema.org/",
+		"@type": "DefinedTermSet",
+		"@id":"termset_01",
+		"name":"Investigation, Study, Assay",
+		"url":"https://isa-specs.readthedocs.io/"
+	},
+	"dateCreated":"2024-04-29",
+	"datePublished":"2024-04-29",
+	"citation":{
+		"@context": "https://schema.org/",
+		"@type": "ScholarlyArticle",
+		"@id": "article_001",
+		"identifier":"article_001",
+		"name":"An article"
+	},
+	"disambiguatingDescription":"A disambiguating description",
+	"hasPart":[
+		{
+			"@context": "https://schema.org/",
+			"@type": "Dataset",
+			"@id":"study_001",
+			"identifier":"study_001",
+			"headline":"Study in Bernburg",
+			"alternateName":"Study in Bernburg",
+			"creator":{
+				"@id":"person_01"
+			},
+			"about":{
+				"@context":"https://bioschemas.org/",
+				"@type": "LabProcess",
+				"@id":"LP_Study_Design_1",
+				"name":"Study Design Bernburg",
+				"agent":{
+					"@id":"person_01"
+				},
+				"startTime":"2008",
+				"endTime":"2009",
+				"object":{
+					"@context": "https://schema.org/",
+					"@type": "Place",
+					"@id":"Place_01",
+					"name":"Bernburg",
+					"geo":{
+						"@context": "https://schema.org/",
+						"@type": "GeoCoordinates",
+						"@id":"Coordinates_01",
+						"latitude":"51.7834",
+						"longitude":"11.7537"
+					}
+				},
+				"parameterValue":[
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_01",
+							"name":"numberOfPlots",
+							"value":"96",
+							"propertyID":"http://purl.obolibrary.org/obo/AGRO_00000306"
+						},
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_02",
+							"name":"altitude",
+							"value":"80",
+							"unitText":"metres above sea level",
+							"propertyID":"http://semanticscience.org/resource/SIO_000438"
+						},
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_03",
+							"name":"yearlyAverageTemperature",
+							"value":"8,9",
+							"unitCode":"http://purl.obolibrary.org/obo/UO_0000027",
+							"propertyID":"http://purl.obolibrary.org/obo/PATO_0000146"
+						},
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_04",
+							"name":"precipitation",
+							"value":"483",
+							"unitCode":"http://purl.obolibrary.org/obo/UO_0000016",
+							"propertyID":"http://purl.obolibrary.org/obo/GENEPIO_0001737"
+						},
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_05",
+							"name":"NSte",
+							"value":"Lö1"
+						},
+						{"@context": "https://schema.org/",
+							"@type": "PropertyValue",
+							"@id":"Parameter_06",
+							"name":"soilType",
+							"value":"Clay"
+						}
+					],
+				"result":{
+					"@context": "https://schema.org/",
+					"@type": "MediaObject",
+					"@id":"File_01",
+					"name":"2022_LSA_SoHa_LSV_ab_2008_Management_PY_Standort.xlsx"
+				},
+				"executesLabProtocol":{
+					"@context":"https://bioschemas.org/",
+					"@type": "LabProtocol",
+					"@id":"LabProtocol_1",
+					"bioSample":{
+						"@context":"https://bioschemas.org/",
+						"@type": "BioSample",
+						"@id":"Sample_01",
+						"description":"?",
+						"identifier":"?",
+						"name":"?",
+						"url":"?"
+					},
+					"intendedUse":"Study Design",
+					"keywords":"Study Design, ...",
+					"labEquipment":"?",
+					"name":"Study Design",
+					"reagent":"?"
+				}
+			},
+			"description":"A description of a study executed in Bernburg",
+			"dateCreated":"2024-04-29",
+			"dateModified":"2024-04-29",
+			"datePublished":"2024-04-29",
+			"citation":{
+				"@id": "article_001"
+			},
+			"hasPart":[
+				{
+					"@context": "https://schema.org/",
+					"@type": "Dataset",
+					"@id":"assay_001",
+					"additionalType":"Assay",
+					"creator":{
+						"@id":"person_01"
+					},
+					"identifier":"assay_001",
+					"headline":"Sowing in Bernburg 2008",
+					"about":{
+						"@context":"https://bioschemas.org/",
+						"@type": "LabProcess",
+						"@id":"LP_Sowing_Bernburg_1",
+						"name":"LabProcess Sowing in Bernburg 2008",
+						"agent":{
+							"@id":"person_01"
+						},
+						"startTime":"06.03.2008",
+						"endTime":"06.03.2008",
+						"object":{
+							"@context": "https://schema.org/",
+							"@type": "Place",
+							"@id":"Place_01",
+							"name":"Bernburg",
+							"geo":{
+								"@context": "https://schema.org/",
+								"@type": "GeoCoordinates",
+								"@id":"Coordinates_01",
+								"latitude":"51.7834",
+								"longitude":"11.7537"
+							}
+						},
+						"parameterValue":[
+								{"@context": "https://schema.org/",
+									"@type": "PropertyValue",
+									"@id":"Parameter_07",
+									"name":"previousCrop",
+									"value":"Oats (grain utilization)"
+								},
+								{"@context": "https://schema.org/",
+									"@type": "PropertyValue",
+									"@id":"Parameter_08",
+									"name":"seeding strength",
+									"value":"350",
+									"unitText":"seeds/m²"
+								}
+							],
+						"result":{
+							"@context": "https://schema.org/",
+							"@type": "MediaObject",
+							"@id":"File_02",
+							"name":"2022_LSA_SoHa_LSV_ab_2008_Management_PY_A_u_P.xlsx"
+						},
+						"executesLabProtocol":{
+							"@context":"https://bioschemas.org/",
+							"@type": "LabProtocol",
+							"@id":"LabProtocol_2",
+							"bioSample":{
+								"@context":"https://bioschemas.org/",
+								"@type": "BioSample",
+								"@id":"Sample_02",
+								"description":"?",
+								"identifier":"?",
+								"name":"?",
+								"url":"?"
+							},
+							"intendedUse":"Seed sowing",
+							"keywords":"seed, sowing, ...",
+							"labEquipment":"?",
+							"name":"Seed sowing",
+							"reagent":"?"
+						}
+					},
+					"measurementMethod":"?",
+					"measurementTechnique":"?",
+					"description":"Sowing of oats in Bernburg 2008"
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "Dataset",
+					"@id":"assay_002",
+					"additionalType":"Assay",
+					"creator":{
+						"@id":"person_01"
+					},
+					"identifier":"assay_002",
+					"headline":"Sowing in Bernburg 2009",
+					"about":{
+						"@context":"https://bioschemas.org/",
+						"@type": "LabProcess",
+						"@id":"LP_Sowing_Bernburg_2",
+						"name":"LabProcess Sowing in Bernburg 2009",
+						"agent":{
+							"@id":"person_01"
+						},
+						"startTime":"30.03.2009",
+						"endTime":"30.03.2009",
+						"object":{
+							"@context": "https://schema.org/",
+							"@type": "Place",
+							"@id":"Place_01",
+							"name":"Bernburg",
+							"geo":{
+								"@context": "https://schema.org/",
+								"@type": "GeoCoordinates",
+								"@id":"Coordinates_01",
+								"latitude":"51.7834",
+								"longitude":"11.7537"
+							}
+						},
+						"parameterValue":[
+								{"@context": "https://schema.org/",
+									"@type": "PropertyValue",
+									"@id":"Parameter_09",
+									"name":"previousCrop",
+									"value":"Oats (green utilization)"
+								},
+								{"@context": "https://schema.org/",
+									"@type": "PropertyValue",
+									"@id":"Parameter_10",
+									"name":"seeding strength",
+									"value":"350",
+									"unitText":"seeds/m²"
+								}
+							],
+						"result":{
+							"@context": "https://schema.org/",
+							"@type": "MediaObject",
+							"@id":"File_02",
+							"name":"2022_LSA_SoHa_LSV_ab_2008_Management_PY_A_u_P.xlsx"
+						},
+						"executesLabProtocol":{
+							"@context":"https://bioschemas.org/",
+							"@type": "LabProtocol",
+							"@id":"LabProtocol_2"
+						}
+					},
+					"measurementMethod":"?",
+					"measurementTechnique":"?",
+					"description":"Sowing of oats in Bernburg 2009"
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "Dataset",
+					"@id":"assay_003",
+					"additionalType":"Assay",
+					"creator":{
+						"@id":"person_01"
+					},
+					"identifier":"assay_003",
+					"headline":"Tillage in Bernburg 2008",
+					"about":{
+						"@context":"https://bioschemas.org/",
+						"@type": "LabProcess",
+						"@id":"LP_Tillage_Bernburg_1",
+						"name":"LabProcess Tillage in Bernburg 2008",
+						"agent":{
+							"@id":"person_01"
+						},
+						"startTime":"29.08.2007",
+						"endTime":"29.08.2007",
+						"object":{
+							"@context": "https://schema.org/",
+							"@type": "Place",
+							"@id":"Place_01",
+							"name":"Bernburg",
+							"geo":{
+								"@context": "https://schema.org/",
+								"@type": "GeoCoordinates",
+								"@id":"Coordinates_01",
+								"latitude":"51.7834",
+								"longitude":"11.7537"
+							}
+						},
+						"result":{
+							"@context": "https://schema.org/",
+							"@type": "MediaObject",
+							"@id":"File_02",
+							"name":"2022_LSA_SoHa_LSV_ab_2008_Management_PY_A_u_P.xlsx"
+						},
+						"executesLabProtocol":{
+							"@context":"https://bioschemas.org/",
+							"@type": "LabProtocol",
+							"@id":"LabProtocol_3",
+							"bioSample":{
+								"@context":"https://bioschemas.org/",
+								"@type": "BioSample",
+								"@id":"Sample_03",
+								"description":"?",
+								"identifier":"?",
+								"name":"?",
+								"url":"?"
+							},
+							"intendedUse":"Basic tillage",
+							"keywords":"tillage, soil, ...",
+							"labEquipment":"?",
+							"name":"Basic tillage",
+							"reagent":"?"
+						}
+					},
+					"measurementMethod":"?",
+					"measurementTechnique":"?",
+					"description":"Basic tillage in Bernburg 2008"
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "Dataset",
+					"@id":"assay_004",
+					"additionalType":"Assay",
+					"creator":{
+						"@id":"person_01"
+					},
+					"identifier":"assay_004",
+					"headline":"Harvest in Bernburg 2008",
+					"about":{
+						"@context":"https://bioschemas.org/",
+						"@type": "LabProcess",
+						"@id":"LP_Harvest_Bernburg_1",
+						"name":"LabProcess Harvest in Bernburg 2008",
+						"agent":{
+							"@id":"person_01"
+						},
+						"startTime":"25.07.2008",
+						"endTime":"25.07.2008",
+						"object":{
+							"@context": "https://schema.org/",
+							"@type": "Place",
+							"@id":"Place_01",
+							"name":"Bernburg",
+							"geo":{
+								"@context": "https://schema.org/",
+								"@type": "GeoCoordinates",
+								"@id":"Coordinates_01",
+								"latitude":"51.7834",
+								"longitude":"11.7537"
+							}
+						},
+						"result":{
+							"@context": "https://schema.org/",
+							"@type": "MediaObject",
+							"@id":"File_02",
+							"name":"2022_LSA_SoHa_LSV_ab_2008_Management_PY_A_u_P.xlsx"
+						},
+						"executesLabProtocol":{
+							"@context":"https://bioschemas.org/",
+							"@type": "LabProtocol",
+							"@id":"LabProtocol_4",
+							"bioSample":{
+								"@context":"https://bioschemas.org/",
+								"@type": "BioSample",
+								"@id":"Sample_04",
+								"description":"?",
+								"identifier":"?",
+								"name":"?",
+								"url":"?"
+							},
+							"intendedUse":"Harvest",
+							"keywords":"harvest, ...",
+							"labEquipment":"?",
+							"name":"Harvest",
+							"reagent":"?"
+						}
+					},
+					"measurementMethod":"?",
+					"measurementTechnique":"?",
+					"description":"Harvest in Bernburg 2008"
+				}
+			]
+		}
+	]
+	
+}
