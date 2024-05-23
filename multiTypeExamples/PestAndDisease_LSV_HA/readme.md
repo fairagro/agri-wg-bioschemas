@@ -20,9 +20,9 @@ It includes multiple sheets on management activities of an experiment
 # Challenges
 ## Study layer
 - Modeling each experiment site as a study and modeling the general experimental design (contents of 'Site' sheet) as a ISA study
--- LabProcess for the Study design, the related LabProtocol requires a BioSample --> what would this be in such a case?
--- LabProtocol requires a 'labEquipment' --> what would this be when modeling general study design as a LabProtocol?
--- same question for 'reagent'
+- LabProcess for the Study design, the related LabProtocol requires a BioSample --> what would this be in such a case?
+  - LabProtocol requires a 'labEquipment' --> what would this be when modeling general study design as a LabProtocol?
+  - same question for 'reagent'
 
 ## Assay layer
 - Should each activity (sowing, soil preparation, etc.) at a location be modeled as its own assay or should it be one assay with multiple LabProcess/LabProtocol pairs?
