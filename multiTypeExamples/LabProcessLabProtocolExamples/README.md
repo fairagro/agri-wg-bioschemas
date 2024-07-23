@@ -30,8 +30,7 @@ This folder includes example snippets of metadata expressed as [LabProcess](http
 		- It includes:
 		    - intendedUse, containing a human readable description of the LabProtocol
 				- the chemical components of the fertilizer as [PropertyValue](https://schema.org/PropertyValue)s, linked via [reagent](https://bioschemas.org/types/LabProtocol/0.5-DRAFT#reagent)
-		- Open questions:
-        - ??
+				
 -	PSM_konst_product.json
     - The two LabProcess objects describe the application of two different pesticides at the same location at different points in time
 		- They include:
