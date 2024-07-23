@@ -1,0 +1,92 @@
+[
+	{
+	"@context":"https://bioschemas.org/",
+	"@type": "LabProcess",
+	"@id":"Pesticides_Walbeck_2008_01",
+	"startTime": "2008-04-28",
+	"endTime": "2008-04-28",
+	"object":[
+		{	
+			"@context":"https://bioschemas.org/",
+			"@type": "ChemicalSubstance",
+			"@id":"FOXTRIL_SUPER",
+			"name":"FOXTRIL SUPER"
+			}
+		],
+	"parameterValue":[
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_01",
+			"name":"BBCH",
+			"value":"13"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_02",
+			"name":"Volume",
+			"value":"1,5"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_03",
+			"name":"Section",
+			"value":"H"
+			}
+		],
+	"executesLabProtocol":{
+			"@context":"https://bioschemas.org/",
+			"@type": "LabProtocol",
+			"@id":"PesticideProtocolFoxtrilSuper",
+			"intendedUse":"This is a human readable description of the LabProtocol to explain its intended use",
+			"protocolApplication":"Application instructions for Foxtril Super"
+		}
+	},
+	{
+	"@context":"https://bioschemas.org/",
+	"@type": "LabProcess",
+	"@id":"Pesticides_Walbeck_2008_02",
+	"startTime": "2008-05-08",
+	"endTime": "2008-05-08",
+	"object":[
+		{	
+			"@context":"https://bioschemas.org/",
+			"@type": "ChemicalSubstance",
+			"@id":"CONCERT_SX",
+			"name":"CONCERT SX"
+			}
+		],
+	"parameterValue":[
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_01",
+			"name":"BBCH",
+			"value":"21"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_02",
+			"name":"Volume",
+			"value":"0,1"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_03",
+			"name":"Section",
+			"value":"H"
+			}
+		],
+	"executesLabProtocol":{
+			"@context":"https://bioschemas.org/",
+			"@type": "LabProtocol",
+			"@id":"PesticideProtocolConcertSX",
+			"intendedUse":"This is a human readable description of the LabProtocol to explain its intended use",
+			"protocolApplication":"Application instructions for Concert SX"
+		}
+	}
+]

@@ -1,0 +1,52 @@
+{
+	"@context":"https://bioschemas.org/",
+	"@type": "LabProcess",
+	"@id":"PreCrop_Walbeck_2008",
+	"startTime": "2008-02-28",
+	"endTime": "2008-08-07",
+	"object":[
+		{	
+			"@context":"https://bioschemas.org/",
+			"@type": "Crop",
+			"@id":"PreCrop",
+			"name":"fodder peas",
+			"taxonomicRange":"http://aims.fao.org/aos/agrovoc/c_5933",
+			"variety":"Alvesta"
+			}
+		],
+	"parameterValue":[
+		{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_01",
+			"name":"seeding strength",
+			"value":"350",
+			"unitText":"seeds/m²"
+			}
+		],
+	"executesLabProtocol":{
+			"@context":"https://bioschemas.org/",
+			"@type": "LabProtocol",
+			"@id":"FodderPeaPreCropProtocol",
+			"bioSample":"http://aims.fao.org/aos/agrovoc/c_5933",
+			"intendedUse":"This is a human readable description of the LabProtocol to explain its intended use",
+			"labEquipment":[
+				{
+					"@context": "https://schema.org/",
+					"@type": "DefinedTerm",
+					"@id":"SowingEquipment",
+					"inDefinedTermSet":"https://www.fao.org/agrovoc/",
+					"termCode":"c_26059",
+					"name":"sowing equipment"
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "DefinedTerm",
+					"@id":"Harvesters",
+					"inDefinedTermSet":"https://www.fao.org/agrovoc/",
+					"termCode":"c_3499",
+					"name":"Harvesters"
+				}
+			]
+		}
+}

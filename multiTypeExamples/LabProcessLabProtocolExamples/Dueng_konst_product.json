@@ -1,0 +1,189 @@
+[
+	{
+	"@context":"https://bioschemas.org/",
+	"@type": "LabProcess",
+	"@id":"Fertilizer_Walbeck_2008_01",
+	"startTime": "2008-05-08",
+	"endTime": "2008-05-08",
+	"object":[
+		{	
+			"@context":"https://bioschemas.org/",
+			"@type": "ChemicalSubstance",
+			"@id":"Nitrophoska_Fertilizer",
+			"name":"Nitrophoska"
+			}
+		],
+	"parameterValue":[
+		{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_01",
+			"name":"Nitrogen",
+			"value":"40",
+			"unitText":"percent"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_02",
+			"name":"Phosphate",
+			"value":"10",
+			"unitText":"percent"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_03",
+			"name":"Potassium oxide",
+			"value":"20",
+			"unitText":"percent"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_04",
+			"name":"Magnesium oxide",
+			"value":"6",
+			"unitText":"percent"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_05",
+			"name":"Calcium oxide"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_06",
+			"name":"Sulfur",
+			"value":"6",
+			"unitText":"percent"
+			},
+			{
+			"@context": "https://schema.org/",
+			"@type": "PropertyValue",
+			"@id":"Parameter_07",
+			"name":"BBCH",
+			"value":"21"
+			}
+		],
+	"executesLabProtocol":{
+			"@context":"https://bioschemas.org/",
+			"@type": "LabProtocol",
+			"@id":"FertilizerProtocolNitrophoska",
+			"intendedUse":"This is a human readable description of the LabProtocol to explain its intended use",
+			"reagent":[
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_01",
+					"name": "Nitrogen"
+				},
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_02",
+					"name": "Phosphate"
+				},
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_03",
+					"name": "Potassium oxide"
+				},
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_04",
+					"name": "Magnesium oxide"
+				},
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_05",
+					"name": "Calcium oxide"
+				},
+				{
+					"@context":"https://schema.org/",
+					"@type": "PropertyValue",
+					"@id": "LabProtocol_Property_06",
+					"name": "Sulfur"
+				}				
+			]
+		}
+	},
+	{
+		"@context":"https://bioschemas.org/",
+		"@type": "LabProcess",
+		"@id":"Fertilizer_Walbeck_2008_02",
+		"startTime": "2008-05-23",
+		"endTime": "2008-05-23",
+		"object":[
+			{	
+				"@context":"https://bioschemas.org/",
+				"@type": "ChemicalSubstance",
+				"@id":"Nitrophoska_Fertilizer",
+				"name":"Nitrophoska"
+				}
+			],
+		"parameterValue":[
+			{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_01",
+				"name":"Nitrogen",
+				"value":"30",
+				"unitText":"percent"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_02",
+				"name":"Phosphate",
+				"value":"8",
+				"unitText":"percent"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_03",
+				"name":"Potassium oxide",
+				"value":"15",
+				"unitText":"percent"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_04",
+				"name":"Magnesium oxide",
+				"value":"6",
+				"unitText":"percent"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_05",
+				"name":"Calcium oxide"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_06",
+				"name":"Sulfur",
+				"value":"6",
+				"unitText":"percent"
+				},
+				{
+				"@context": "https://schema.org/",
+				"@type": "PropertyValue",
+				"@id":"Parameter_07",
+				"name":"BBCH",
+				"value":"39"
+				}
+			],
+		"executesLabProtocol":{
+				"@id":"FertilizerProtocolNitrophoska"
+			}
+	}
+]

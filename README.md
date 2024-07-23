@@ -7,4 +7,6 @@ Developments are distinguished between Types and Profiles, each with their respe
  - useCases : A markdown file with a textual description of the use cases that reflect the requirements for the specific Type/Profile. This is meant to motivate the developments of the new Types/Profiles.
  - examples: A sub-directory to develop modelling ideas e.g. by modelling schema.org/bioschemas metadata descriptions of use-case datasets. Each dataset should be worked on in its own subdirectory
  - jsonld_type: A folder containing the JSON-LD markup, that is meant to be submitted to Bioschemas via the [DDE](https://discovery.biothings.io/schema-playground). 
+ 
+Some examples that include multiple types (e.g. current work on describing data with LabProcess/LabProtocol) are collected  in the "multiTypeExamples" folder
 
