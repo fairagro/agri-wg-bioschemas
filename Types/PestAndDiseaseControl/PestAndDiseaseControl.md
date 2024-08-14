@@ -1,4 +1,4 @@
-# Soil
+# Pest & Disease Control
 
 ## Schema.org hierarchy
 [Thing](http://schema.org/Thing) > ?
@@ -8,27 +8,27 @@
 
 ## Properties
 
-- Property Name: soilTextureUSDA
-	- Expected Type: "code: S; LS; SL; SCL; SiL; SiCL; CL; L; Si; SC; SiC; C; HC; VFS; FS; MS; CS; US; LVFS; LFS; LCS; FSL; CSL"
+- Property Name: pesticideAndDiseaseControlType
+	- Expected Type: "code: conventional; integrated; organic; none"
 	- Description: XXX
 	- Example queries:
 		- XXX
-- Property Name: soilInitialSamplingDate
-	- Expected Type: "unit: date"
-	- Description: XXX
-	- Example queries:
-		- XXX
-- Property Name: soilBulkDensity
-	- Expected Type: "unit: g.cm-3"
-	- Description: XXX
-	- Example queries:
-		- XXX
-- Property Name: SoilPH
+- Property Name: pesticideName
 	- Expected Type: XXX
 	- Description: XXX
 	- Example queries:
 		- XXX
-- Property Name: soilOrganicCarbon
+- Property Name: pesticideEffectiveRange
+	- Expected Type: XXX
+	- Description: XXX
+	- Example queries:
+		- XXX
+- Property Name: XXX
+	- Expected Type: XXX
+	- Description: XXX
+	- Example queries:
+		- XXX
+- Property Name: XXX
 	- Expected Type: XXX
 	- Description: XXX
 	- Example queries:

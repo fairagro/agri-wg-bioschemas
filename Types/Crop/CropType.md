@@ -1,4 +1,3 @@
-
 # Crop
 
 ## Schema.org hierarchy
@@ -20,7 +19,22 @@ Any plant or plant product grown for a specific purpose.
 	- Example queries:
 		- Finding datasets where a crop was planted in soils with increased magnesium concentration
 		- Finding datasets where a crop was planted in Northrhine Westfalia, Germany
-- Property Name: XXX
+- Property Name: cropSowingPeriod
+	- Expected Type: XXX
+	- Description: XXX
+	- Example queries:
+		- XXX
+- Property Name: cropResiduesRemoval
+	- Expected Type: XXX
+	- Description: XXX
+	- Example queries:
+		- XXX
+- Property Name: cropResiduesIncorporation
+	- Expected Type: XXX
+	- Description: XXX
+	- Example queries:
+		- XXX
+- Property Name: cropResiduesBurning
 	- Expected Type: XXX
 	- Description: XXX
 	- Example queries:
