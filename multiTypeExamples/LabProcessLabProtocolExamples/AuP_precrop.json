@@ -19,7 +19,7 @@
 			"@context": "https://schema.org/",
 			"@type": "PropertyValue",
 			"@id":"Parameter_01",
-			"name":"seeding strength",
+			"name":"sowing density",
 			"value":"350",
 			"unitText":"seeds/m²"
 			}
