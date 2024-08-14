@@ -28,7 +28,7 @@
 	- Description: XXX
 	- Example queries:
 		- XXX
-- Property Name: soilOrganicCarbon
+- Property Name: XXX
 	- Expected Type: XXX
 	- Description: XXX
 	- Example queries:
