@@ -1,1 +1,6 @@
-id,rdiName,entitiesInData,comment
+id,rdiName,entitiesInData,link,comment
+001,BonaRes Repository,Soil/?,https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en,
+002,EDAL-PGP,Crop/?,https://edal-pgp.ipk-gatersleben.de/,
+003,OpenAgrar,Crop/Soil(?)/Plot(?)/?,https://www.openagrar.de/content/index.xml,
+004,Edaphobase,Soil/?,https://portal.edaphobase.org/,
+005,EnsemblPlants,Crop/?,https://plants.ensembl.org/,
