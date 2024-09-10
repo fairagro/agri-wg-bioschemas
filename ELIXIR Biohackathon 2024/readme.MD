@@ -33,7 +33,8 @@ This task tests the limits of the extension in its current form. By trying to de
 ### Goal
 ### Preparation
 
-## Automatic transformation of existing dataset metadata
+## Development of conversion scripts for homogeneous field trial datasets
 ### Description
 ### Goal
 ### Preparation
+- datasets need to be well curated beforehand
