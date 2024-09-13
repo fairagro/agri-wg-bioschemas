@@ -1,4 +1,5 @@
 
+
 # Project abstract
 
 Research Data Infrastructures (RDIs) provide crucial publication services for researchers in the agrosystem domain. Due to their heterogeneous user communities and requirements, metadata standardization approaches to increase the FAIRness of resources can be a catalyst in simplifying data reusability and enabling cross-domain research.
@@ -53,9 +54,11 @@ To increase chances of uptake and adoption of the extension by service providers
 
 ## Guidance and best practice documents for Research Data Infrastructures when adopting the extension [Task 5]
 ### Description
-tbd
+The results of the previous tasks will lead to insights on how to support Research Data Infrastructures in adopting the extension. By creating best practice documents and collecting identified challenges during the Hackathon work, this task will condense the results and make them available to one of the relevant stakeholder groups.
 ### Goals & outcomes
+- A (set) of document(s) that can be distributed to domain RDIs to support them if they decide to generate markup with the extension
 ### Preparation
+- ?
 
 ## Development of conversion scripts for homogeneous field trial datasets [Task 6]
 ### Description
