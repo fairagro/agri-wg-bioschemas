@@ -48,7 +48,7 @@ To increase chances of uptake and adoption of the extension by service providers
 ### Goals & outcomes
 - a list of mapping statements between Types & Properties of the extension and other metadata resources
 ### Preparation
-- [1]: A structure and vocabulary for defining the mappings (would [SSSOM](https://mapping-commons.github.io/sssom/) work here?)
+- [1]: A structure and vocabulary for defining the mappings (would [SSSOM](https://mapping-commons.github.io/sssom/) work here? In the proposal we mentioned [FAIR-IMPACT's mapping approach](https://fair-impact.eu/events/fairimpact-events/why-mappings-matter-and-how-make-them-fair), this might also be a good candidate)
 - [2]: A list of possible relevant metadata schemas & standards to map to
 
 ## Guidance and best practice documents for Research Data Infrastructures when adopting the extension [Task 5]
