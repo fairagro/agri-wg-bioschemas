@@ -1,10 +1,37 @@
 id,entitiesInData,link,status,analysisLink,comment
-001,Crop,https://doi.org/10.5073/20240805-141406-0,new,/,Includes cultivar names in column A of the 'SSR' sheet in the excel file
-002,Crop,https://doi.org/10.5073/20231020-150935-0,new,/,Includes variety names in column B ('Genotype name') of '1-Plant material' sheet
-003,Soil,https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&doi=72ca6e98-5aab-4884-bf1b-56931482eb94,new,/,sampling date/soil management practice/soil depth/soil recultivation/water content/soil texture/ph value/nh4/no3/smin/pcal/kcal/mg_ex/corg/Nt/...
-004,Soil,https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=a121feba-bcf7-4f35-ab18-e963ebc0b7c2,new,/,soil water content/dissolved organic carbon/dissolved organic nitrogen/Microbial biomass carbon/Microbial biomass nitrogen
-005,Soil,https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=85040363-b699-4af0-9355-e47d2ebeee1b,new,/,soil type
-006,Soil,https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=3c0c77b5-bdc7-44e0-a43a-daddbee4b804,new,/,soil profile/soil depth/profile depth/profile position/soil depth cm/pH_CaCl2/carbon/inogarnic carbon/organic carbon/nitrogen/sulphur/aluminium/calcium/iron/potassium/magnesium/manganese/phosphorus/zinc/molar ratio (Al+Fe+Mn):P/P_H2O/P_resin/P_NaHCO3/...
+001,"Crop",https://doi.org/10.5073/20240805-141406-0,new,/,Includes cultivar names in column A of the 'SSR' sheet in the excel file
+002,"Crop",https://doi.org/10.5073/20231020-150935-0,new,/,Includes variety names in column B ('Genotype name') of '1-Plant material' sheet
+003,"Soil",https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&doi=72ca6e98-5aab-4884-bf1b-56931482eb94,new,/,sampling date/soil management practice/soil depth/soil recultivation/water content/soil texture/ph value/nh4/no3/smin/pcal/kcal/mg_ex/corg/Nt/...
+004,"Soil",https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=a121feba-bcf7-4f35-ab18-e963ebc0b7c2,new,/,soil water content/dissolved organic carbon/dissolved organic nitrogen/Microbial biomass carbon/Microbial biomass nitrogen
+005,"Soil",https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=85040363-b699-4af0-9355-e47d2ebeee1b,new,/,soil type
+006,"Soil",https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=3c0c77b5-bdc7-44e0-a43a-daddbee4b804,new,/,soil profile/soil depth/profile depth/profile position/soil depth cm/pH_CaCl2/carbon/inogarnic carbon/organic carbon/nitrogen/sulphur/aluminium/calcium/iron/potassium/magnesium/manganese/phosphorus/zinc/molar ratio (Al+Fe+Mn):P/P_H2O/P_resin/P_NaHCO3/...
 007,"Field Trials, Gene Expression summaries (eg, p-values, TPMs), Sample Conditions, Experimental Factors",https://www.ebi.ac.uk/gxa/experiments?kingdom=%22Plants%22,done,https://github.com/Rothamsted/agri-schemas/blob/master/doc/ebi-gxa-use-case/README.md,data is part of http://knetminer-data.cyverseuk.org/lodestar/sparql. Scripts producing it need upgrade to new EBI BioStudies API (old API removed).
 008,"Field Trials, Genes, Gene Variants, Phenotypes",https://aragwas.1001genomes.org/#/,new,,"of interest for KnetMiner, since they have links between plant biology studies to genes."
 009,"Crop, Soil, Plots, Fertilizer (CO2, N), Sample Conditions, Experimental Factors",https://doi.org/10.18174/odjar.v6i0.16397,new,/,"2 Kinds of Fertilizers (CO2, N) applied to different plots. Example for fertilizer type."
+010,"Pesticides (Boscalid/Pyraclostrobin concentrations)",https://doi.org/10.5073/20240927-165036-0,new,/,/
+011,"Soil, Weather, Plot, Crop",https://doi.org/10.3220/DATA20240627155423-0,new,/,/
+012,"Crop (cultivar name), Genes",https://doi.org/10.5073/20231220-114634-0,new,/,/
+013,"Crop (phenotypic data, genotypic data), Diseases(Wheat dwarf virus)",https://doi.org/10.5073/20230616-101640-0,new,/,/
+014,"Soil (Texture, Sampling depth)",https://doi.org/10.5281/zenodo.7682445,new,/,/
+015,"Crop",https://doi.org/10.5073/20230302-143854-0,new,/,/
+016,"Soil",https://doi.org/10.3220/DATA20230510130443-0,new,/,/
+017,"Soil",https://doi.org/10.5073/20221101-085525,new,/,/
+018,"Soil",https://doi.org/10.3220/DATA20220922104041,new,/,/
+019,"Crop",https://doi.org/10.5073/20220505-154819,new,/,/
+020,"Pesticides",https://doi.org/10.5073/20210318-133039",new,/,/
+021,"Soil",https://doi.org/10.3220/DATA20210630134418,new,/,/
+022,"Crop (species, cultivar)",https://doi.org/10.5073/20200907-140951,new,/,/
+023,"Soil, Weather, Crop",https://doi.org/10.18174/odjar.v6i0.16397,new,/,/
+024,"Soil, Weather, Crop",https://doi.org/10.18174/odjar.v6i0.17915,new,/,/
+025,"Soil, Plots",https://doi.org/10.3220/DATA20200203151139",new,/,/
+026,"Crop",https://doi.org/10.5281/zenodo.1316947,new,/,/
+027,"Crop",https://doi.org/10.5073/20180907-142020,new,/,/
+028,"Crop, Soil, Weather, Management activities",https://doi.org/10.3220/DATA20180201-080050,new,/,/
+029,"Crop, Pesticides, Diseases",https://doi.org/10.5073/20171120-124946,new,/,/
+
+
+
+
+
+
+

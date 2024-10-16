@@ -34,4 +34,8 @@ Any unconsolidated mineral or organic material on the immediate surface of the E
 	- Description: Percentage of of measurable organic carbon components in this specific soil.
 	- Example queries:
 		- Find a dataset with organic carbon values between 3 and 5 percent.
-
+- Property Name: ?
+	- Expected Type: ?
+	- Description: ?
+	- Example queries:
+		- ?
