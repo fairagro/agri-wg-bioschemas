@@ -20,8 +20,8 @@ This task tests the limits of the extension in its current form. By trying to de
 - a set of example datasets annotated with the extension
 ### Preparation
 - [1] A basic introduction to schema.org
-- [2] A presentable and understandable version of the current state of the extension
-- [3] A list of datasets that in some way include the core entities of the extension
+- [2] https://github.com/fairagro/agri-wg-bioschemas/tree/main/Types
+- [3] https://github.com/fairagro/agri-wg-bioschemas/blob/main/exampleDatasets/exampleDatasets.csv
 
 ## Development of new Types and Properties [Task 2]
 ### Description
