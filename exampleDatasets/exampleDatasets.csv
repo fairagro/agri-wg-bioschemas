@@ -21,7 +21,7 @@ id,entitiesInData,link,status,analysisLink,comment
 020,"Pesticides",https://doi.org/10.5073/20210318-133039",new,/,/
 021,"Soil",https://doi.org/10.3220/DATA20210630134418,new,/,/
 022,"Crop (species, cultivar)",https://doi.org/10.5073/20200907-140951,new,/,/
-023,"Soil, Weather, Crop, Fertilizer",https://doi.org/10.18174/odjar.v6i0.16397,new,/,/
+023,"Soil, Weather, Crop, Fertilizer",https://doi.org/10.18174/odjar.v6i0.16397,in progress,https://github.com/fairagro/agri-wg-bioschemas/tree/main/exampleDatasets/10.18174odjar.v6i0.16397,/
 024,"Soil, Weather, Crop",https://doi.org/10.18174/odjar.v6i0.17915,new,/,/
 025,"Soil, Plots",https://doi.org/10.3220/DATA20200203151139",new,/,/
 026,"Crop",https://doi.org/10.5281/zenodo.1316947,new,/,/
