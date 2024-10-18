@@ -21,14 +21,14 @@ id,entitiesInData,link,status,analysisLink,comment
 020,"Pesticides",https://doi.org/10.5073/20210318-133039",new,/,/
 021,"Soil",https://doi.org/10.3220/DATA20210630134418,new,/,/
 022,"Crop (species, cultivar)",https://doi.org/10.5073/20200907-140951,new,/,/
-023,"Soil, Weather, Crop",https://doi.org/10.18174/odjar.v6i0.16397,new,/,/
+023,"Soil, Weather, Crop, Fertilizer",https://doi.org/10.18174/odjar.v6i0.16397,new,/,/
 024,"Soil, Weather, Crop",https://doi.org/10.18174/odjar.v6i0.17915,new,/,/
 025,"Soil, Plots",https://doi.org/10.3220/DATA20200203151139",new,/,/
 026,"Crop",https://doi.org/10.5281/zenodo.1316947,new,/,/
 027,"Crop",https://doi.org/10.5073/20180907-142020,new,/,/
 028,"Crop, Soil, Weather, Management activities",https://doi.org/10.3220/DATA20180201-080050,new,/,/
 029,"Crop, Pesticides, Diseases",https://doi.org/10.5073/20171120-124946,new,/,/
-
+030,"Soil, Crop, Management activities", 
 
 
 

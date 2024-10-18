@@ -1,0 +1,13 @@
+{
+	"@id":"001",
+	"@type":"Crop",
+	"name":"",
+	"taxonomicRange":"",
+	"variety": "",
+	"cultivar": "",
+	"plantedIn":"",
+	"cropSowingPeriod":"",
+	"cropResiduesRemoval":"",
+	"cropResiduesIncorporation":"",
+	"cropResiduesBurning":""
+}

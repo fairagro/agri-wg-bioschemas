@@ -1,0 +1,9 @@
+{
+	"@id":"fertilizer_001",
+	"@type": "Fertilizer",
+	"name":"",
+	"fertilizerType":"",
+	"fertilizerProductName": "",
+	"fertilizerApplicationRate": "",
+	"fertilizerApplicationRateUnits":""
+}

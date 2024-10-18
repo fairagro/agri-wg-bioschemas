@@ -1,0 +1,60 @@
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "name": "Experimental data from the Braunschweig FACE studies on wheat growth responses to elevated CO2 in combination with nitrogen supply or infrared warming during grain filling.",
+    "identifier": "https://doi.org/10.18174/odjar.v6i0.16397",
+    "description": "This data paper contains data from a FACE experiment with winter wheat (Triticum aestivum, c.v. Batis) carried out over two years at Braunschweig, Germany. The experimental variants included firstly a study on the interaction of two levels of CO2 (393, 600 ppm) and three levels of nitrogen (N) fertilization (ca. 40, 190 and 320 kg N ha-1) and secondly a study on the interaction of these CO2 treatments and three levels of infrared warming during grain filling (ambient, ca. +1.5°C and +3°C). In the second study N supply was only ca. 190 kg N ha-1. The datasets of the two studies assembled herein contain data on weather, management, soil condition, soil moisture, phenology, dry weights and N concentrations of the plant (leaves, stems ears), green area index, stem reserves, final grain yield and yield components as well as canopy temperatures (this only applies to the second study). Most of the experimental findings have already been published in scientific journals. Data provided herein are suited to validate the interaction of elevated CO2 concentration and either N supply or high temperature during grain filling in wheat growth models.",
+    "about": [
+			{
+				"@id":"crop_001",
+				"@type": "Crop",
+				"name": "?",
+				"taxonomicRange":"http://aims.fao.org/aos/agrovoc/c_7951",
+				"variety": "/",
+				"cultivar": "Batis",
+				"plantedIn":"soil_001",
+				"cropSowingPeriod":["2013-10-29","2014-11-04"],
+				"cropResiduesRemoval":"/",
+				"cropResiduesIncorporation":"/",
+				"cropResiduesBurning":"/"
+			},
+			{
+				"@id":"soil_001",
+				"@type": "Soil",
+				"name":"?",
+				"soilTextureClass":"loamy sand",
+				"soilInitialSamplingDate":"2014-04-07",
+				"soilBulkDensity":"1,55 kg/l",
+				"soilPH":"/",
+				"soilOrganicCarbon":"/",
+				"?soilMoisture":"?"
+			},
+			{
+				"@id":"fertilizer_001",
+				"@type": "Fertilizer",
+				"name":"Kieserite",
+				"fertilizerType":"http://aims.fao.org/aos/agrovoc/c_27870",
+				"fertilizerProductName":"/",
+				"fertilizerApplicationRate":"20 kg",
+				"fertilizerApplicationRateUnits":"kg ha-1"
+			},
+			{
+				"@id":"fertilizer_002",
+				"@type": "Fertilizer",
+				"name":"Ammonium nitrate",
+				"fertilizerType":"http://aims.fao.org/aos/agrovoc/c_27870",
+				"fertilizerProductName":"/",
+				"fertilizerApplicationRate":"/",
+				"fertilizerApplicationRateUnits":"/"
+			}
+    ],
+    "keywords": [],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+		"publisher":{
+        "@type": "Organization",
+        "name": ""
+      }
+}
