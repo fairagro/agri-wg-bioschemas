@@ -1,0 +1,23 @@
+# How to annotate datasets with the extension [Task 1]
+- Pick an example dataset from the example dataset list [add link] or take one of your own datasets that you want to work on (please add it to the list, if possible)
+	- Don't forget to change the status of the dataset to "in progress" in the example dataset list :)
+- Create a folder for your dataset. 
+	- You can name it after the identifer (DOI) or name of the dataset (if it isn't too long)
+- Create a JSON file for the metadata. As a starter you can use the "dataset_template.json" file in the templates folder. The properties here are a minimal suggestion, if you want to model more, you can use https://schema.org/Dataset properties for the generic part.
+- Analyse the dataset. Consider:
+	- The metadata available at the publication source (e.g. the repository landing page)
+	- The file contents (table headers, etc.)
+- Try to fill out metadata fields in the JSON file
+	- For metadata on the entities relevant to us (see list of [Types](https://github.com/fairagro/agri-wg-bioschemas/tree/main/Types)) you can use the corresponding templates in the templates folder [ADD LINK]
+		- Copy the JSON object from the template as value for the https://schema.org/about property in your metadata file
+	- If you can't find information for one of the properties of the entities, provide "/" as value
+	- If there are properties in the example dataset that you deem important, add it to the JSON file as "?NameOfTheProperty". These might be properties relevant for the extension
+- Document your findings, challenges and points for discussion in a readme.md file inside of your annotation folder. You can use the documentation template [ADD LINK] for this. Just copy it to your annotation folder and write your documentation.
+- You can find an example for a annotation documentation here [ADD LINK]
+- For documentation:
+	- Provide the ID/name of the dataset in the heading
+	- Note which entities you have annotated and provide a short summary of the dataset is possible
+	- List each entity and its properties. Provide information on what kind of information you annotated, where you got it from (e.g. which datasheet or metadata property)
+	- Add new properties that you found possibly relevant for the extension in the future
+	- Note challenges and open questions for each entity. We will discuss them during our joint sessions during the hackathon
+

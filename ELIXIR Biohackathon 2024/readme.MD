@@ -15,13 +15,16 @@ This task tests the limits of the extension in its current form. By trying to de
 ### Goals & outcomes
 - participants familarize themselves with the basics of schema.org [1] (if needed)
 - participants learn about the current state of the extension [2]
-- participants choose example datasets based on their domain knowledge and annotate them withe the available Types & Properties [3]
-- participants will record the challenges and their feedback to generate insights needed for the following task of further schema development
-- a set of example datasets annotated with the extension
+- participants choose example datasets based on their domain knowledge and annotate them withe the available Types & Properties [3] [4]
+- participants will record the challenges and their feedback to generate insights needed for the following task of further schema development [5]
+- a set of example datasets annotated with the extension [6]
 ### Preparation
 - [1] A basic introduction to schema.org
 - [2] https://github.com/fairagro/agri-wg-bioschemas/tree/main/Types
 - [3] https://github.com/fairagro/agri-wg-bioschemas/blob/main/exampleDatasets/exampleDatasets.csv
+- [4] readme on how to annotate and use the templates
+- [5] template for data annotation notes
+- [6] example dataset (done!)
 
 ## Development of new Types and Properties [Task 2]
 ### Description

@@ -1,0 +1,8 @@
+{
+	"@id":"pestanddiseasecontrol_001",
+	"@type": "Pest&DiseaseControl",
+	"name":"",
+	"pesticideAndDiseaseControlType":"",
+	"pesticideName": "",
+	"pesticideEffectiveRange": ""
+}
