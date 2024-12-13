@@ -20,11 +20,11 @@ This task tests the limits of the extension in its current form. By trying to de
 - a set of example datasets annotated with the extension [6]
 ### Preparation
 - [1] A basic introduction to schema.org
-- [2] https://github.com/fairagro/agri-wg-bioschemas/tree/main/Types
-- [3] https://github.com/fairagro/agri-wg-bioschemas/blob/main/exampleDatasets/exampleDatasets.csv
-- [4] readme on how to annotate and use the templates
-- [5] template for data annotation notes
-- [6] example dataset (done!)
+- [2] List of types and properties: https://github.com/fairagro/agri-wg-bioschemas/tree/main/Types
+- [3] List of example datasets: https://github.com/fairagro/agri-wg-bioschemas/blob/main/exampleDatasets/exampleDatasets.csv
+- [4] A guide on how to annotate and use the templates: https://github.com/fairagro/agri-wg-bioschemas/blob/main/ELIXIR%20Biohackathon%202024/dataset%20annotation/readme.md
+- [5] A template for data annotation notes: https://github.com/fairagro/agri-wg-bioschemas/blob/main/ELIXIR%20Biohackathon%202024/dataset%20annotation/templates/documentation_template.md
+- [6] An example of an annotated dataset: https://github.com/fairagro/agri-wg-bioschemas/tree/main/exampleDatasets/10.18174odjar.v6i0.16397
 
 ## Development of new Types and Properties [Task 2]
 ### Description

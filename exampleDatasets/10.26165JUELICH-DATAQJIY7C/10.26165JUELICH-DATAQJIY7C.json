@@ -1,0 +1,58 @@
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/"
+    },
+    "@id":"https://doi.org/10.26165/JUELICH-DATA/QJIY7C",
+		"@type": "Dataset",
+    "name": "Field Phenotyping of Ten Wheat Cultivars under Elevated CO2 Shows Seasonal Differences in Chlorophyll Fluorescence, Plant Height and Vegetation Indices",
+    "description": "The experimental data consist of the LIFT, PhenoCam, UAV, yield and environmental data.",
+    "about": [
+			{
+				"@id":"LP_001",
+				"@type":"LabProcess",
+				"name":"Planting RGT Reform",
+				"object":[
+					{
+						"@id":"CR_001",
+						"@type":"BioSample",
+						"additionalProperty":[
+							{
+								"@type":"PropertyValue",
+								"name":"variety",
+								"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+								"value":"RGT Reform"
+							}
+						],
+						"taxonomicRange":"http://purl.obolibrary.org/obo/NCBITaxon_4565"
+					}
+				],
+				"location":{
+					"@id":"FW001001",
+					"@type":"Place",
+					"latitude":"50.624702",
+					"longitude":"6.987629438309857"
+				},
+				"parameterValue":[
+					{
+						"@type":"PropertyValue",
+						"name":"Plot size",
+						"value":"3x3",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000008",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_2893"
+					}
+				],
+				"executesLabProtocol":{
+					"@id":"LabPro_001",
+					"@type":"LabProtocol",
+					"description":"The protocol used for planting crops in this experiment",
+					"name":"Crop planting protocol"
+				}
+			}
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+		"publisher":{
+        "@type": "Organization",
+        "name": "FZJ Dataverse"
+      }
+}
