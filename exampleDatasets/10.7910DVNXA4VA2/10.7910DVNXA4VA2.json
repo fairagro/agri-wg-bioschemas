@@ -8,51 +8,79 @@
     "identifier": "https://doi.org/10.18174/odjar.v6i0.16397",
     "description": "The dataset contains 6 growing seasons of a local winter wheat cultivar ‘Wakanui’ at two farms located in the Canterbury Region of New Zealand. The data of the experiment was used in the AgMIP-Wheat Phase 4 project to evaluate the performance of an ensemble of 29 crop models to predict the effect of changing sowing dates and rates on yield and yield components, in a high-yielding environment. The treatments were managed for non-stress conditions. Data include local daily weather, soil characteristics and initial soil N conditions, crop measurements (anthesis and maturity dates, total above-ground biomass, final grain yield, and yield components), and cultivar information. Simulations include both daily in-season and end-of-season results from 29 wheat crop models. (2021-11-03) ",
     "about": [
-		{
-			"@type": "Place",
-			"@id": "FARlee2013",
-			"latitude":"-43,70000",
-			"longitude":"172,30000",
-			"additionalProperty":{
-				"@type": "PropertyValue",
-				"name":"elevation",
-				"propertyID":"http://aims.fao.org/aos/agrovoc/c_316",
-				"description":"Altitude, like elevation, is the distance above sea level.",
-				"unitCode":"http://purl.obolibrary.org/obo/UO_0000008",
-				"value":"10"
-			}
-		},
-		{
-			"@type": "BioSample",
-			"taxonomicRange": "unknown",
-			"additionalProperty":[			
-				{
+			{
+				"@type": "Place",
+				"@id": "FARlee2013",
+				"latitude":"-43,70000",
+				"longitude":"172,30000",
+				"additionalProperty":{
 					"@type": "PropertyValue",
-					"name":"cultivar",
-					"propertyID":"http://aims.fao.org/aos/agrovoc/c_8157",
-					"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature",
-					"value":"WAKANUI"
-				},
-				{
-					"@type": "PropertyValue",
-					"name":"cultivarOrigin",
-					"value":"New Zealand"
-				},
-				{
-					"@type": "PropertyValue",
-					"name":"cultivarReleaseYear",
-					"value":"2008"
+					"name":"elevation",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_316",
+					"description":"Altitude, like elevation, is the distance above sea level.",
+					"unitCode":"http://purl.obolibrary.org/obo/UO_0000008",
+					"value":"10"
 				}
-				
-		},
-		{
-			"@type": "Sample",
-			
-		},
-		{
-			"weather?"
-		}
+			},
+			{
+				"@type": "BioSample",
+				"taxonomicRange": "unknown",
+				"additionalProperty":[			
+					{
+						"@type": "PropertyValue",
+						"name":"cultivar",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_8157",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature",
+						"value":"WAKANUI"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"cultivarOrigin",
+						"value":"New Zealand"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"cultivarReleaseYear",
+						"value":"2008"
+					}
+				]
+			},
+			{
+				"@type": "Sample",
+				"@id":"FARWAKLEE",
+				"name":"Temuka_Clay_Loam",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"soilDepth",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_0c184d6f",
+						"description":"Soil depth defines the root space and the volume of soil from where the plants fulfil their water and nutrient demands.",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000015",
+						"value":"150"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilObstacleDepth",
+						"value":"150"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilAvailableWaterContent",
+						"propertyID":"http://opendata.inrae.fr/thesaurusINRAE/c_6446",
+						"description":"Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000016",
+						"value":"293"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_7199",
+						"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).",
+						"value":"Clay loam"
+					}
+					
+				]
+			}
 		],
-    "keywords": [],
     "license": "https://creativecommons.org/publicdomain/zero/1.0/"
 }
