@@ -4,9 +4,228 @@
         "@vocab": "https://schema.org/"
     },
     "@type": "Dataset",
-    "name": "",
-    "identifier": "",
-    "description": "",
-    "about": [],
-    "license": ""
+    "name": "Long-term field experiment V140 Muencheberg from (launched in 1963) - Plots",
+    "identifier": "https://doi.org/10.20387/bonares-8fhj-r52g",
+    "description": "Parent table of long-term field experiment V140 Muencheberg. This data collection consists of 30 individual tables which are related to each other. General description of the Long-term Field Experiment ‘V140‘: The long-term field experiment ‘V140‘ was established in 1963 at the experimental site of the present Leibniz Centre for Agricultural Landscape Research (ZALF) about 50 km east of Berlin in the district Märkisch-Oderland. The area is characterized by dry periods, particularly during early summer. The long-term average annual precipitation rate and tempeature is 536 mm and 8.8°C, respectively. Weather data for the running period of V140 are available at the DWD (station number 03376 via https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/). The V140 represents one of the few still active long-term field experiments on sandy soil. During the running period just smaller management measures changes have been done. Whereas originally questions to yield increase measures on sandy soil were in focus, present research put more focus on the effects of organic and mineral fertilization on essential aspects of the soil fertility. The V140 is around 0.5 ha and is located on a flat area. Before the establishment of V140 the site was cultivated uniformly. According to the German Guidelines Soil Assessment (Bodenschätzung) the dominating soil types are slightly loamy sand and sand (Sl4D and S4D). The most common soil sub type is Haplic Luvisol. The experiment includes 21 treatments: 5 levels of mineral fertilization combined with 4 levels of organic fertilization and one control. More information, e.g., database scheme, assorted literature overview, the detailed location plan, etc., can be found in the supplemental material.",
+    "about": [
+				{
+					"@type": "Place",
+					"@id": "Plot_12001",
+					"additionalProperty":
+					[
+						{
+							"@type": "PropertyValue",
+							"name":"coarseSand",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_c03927e1",
+							"description":"Content of mineral particles between 0.63-2mm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"6.3"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"mediumSand",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_7b64842d",
+							"description":"Content of mineral particles with sizes between 0.2-0.63mm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"25.6"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"fineSand",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_a91f25d6",
+							"description":"Content of mineral particles with sizes between 63-200µm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"44.3"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"coarseSilt",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_c1b90f01",
+							"description":"Content of mineral particles with sizes between 20-63µm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"13.1"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"mediumSilt",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_090f427c",
+							"description":"Content of mineral particles with sizes between 6.3-20µm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"3.6"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"fineSilt",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_0f15e6e6",
+							"description":"Content of mineral particles with sizes between 2-6.3µm in soil. Note: According to different national and international particle-size classification systems, size classes may differ slightly.",
+							"value":"2.6"
+						},
+						{
+							"@type": "PropertyValue",
+							"name":"clay",
+							"propertyID":"http://aims.fao.org/aos/agrovoc/c_15619",
+							"description":"Very fine mineral particles smaller than 2 µm",
+							"value":"4.5"
+						}
+					]
+				},
+				{
+				"@context": {
+					"@language": "en",
+					"@vocab": "https://bioschemas.org/"
+					},
+				"@type": "BioSample",
+				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_5933",
+				"additionalProperty":[
+						{
+								"@type": "PropertyValue",
+								"name":"iccCode",
+								"propertyID":"https://stats.fao.org/classifications/ICC/v1.1/7-07",
+								"value":"7.07"
+						}
+					]
+				},
+				{
+				"@context": {
+					"@language": "en",
+					"@vocab": "https://bioschemas.org/"
+					},
+				"@type": "Sample",
+				"@id":"Soil_387",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"soilpHValue",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_34901",
+						"description":"Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.",
+						"value":"5.3"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilCt",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_24fb4269",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'Content or amount of total carbon in soil, including organic carbon and carbon from lime.'",
+						"value":"575"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilNt",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_34901",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'Content or amount of total nitrogen in soil.'",
+						"value":"54.4"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilP",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_4daedadd",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'Content or amount of total nitrogen in soil.'",
+						"value":"6.7"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilK",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_7a06ec72",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'No description.'",
+						"value":"8.7"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilMg",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_0a33d2d2",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'No description.'",
+						"value":"4.5"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilCa",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_5ee79403",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'No description.'",
+						"value":"160"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilB",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_f52b8ef5",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'No description.'",
+						"value":"0.14"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilCu",
+						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001840",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
+						"value":"2.5"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilCu",
+						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001840",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
+						"value":"2.5"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilMn",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_bdd23954",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
+						"value":"42"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilMn",
+						"propertyID":"http://opendata.inra.fr/anaeeThes/c_bdd23954",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
+						"value":"42"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilTopDepth",
+						"propertyID":"http://purl.obolibrary.org/obo/ENVO_06105225",
+						"description":"The depth of the top part of a soil layer.",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000015",
+						"value":"0"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilBottomDepth",
+						"propertyID":"http://purl.obolibrary.org/obo/ENVO_06105226",
+						"description":"The depth of the bottom part of a soil layer.",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000015",
+						"value":"25"
+					}
+				]
+			},
+				{
+					"@context": {
+						"@language": "en",
+						"@vocab": "https://bioschemas.org/"
+						},
+						"@type":"ChemicalSubstance",
+						"name":"Acanto",
+						"identifier":{
+							"@type": "PropertyValue",
+							"name":"Zulassungsnummer",
+							"url":"https://www.bvl.bund.de/DE/Arbeitsbereiche/04_Pflanzenschutzmittel/01_Aufgaben/02_ZulassungPSM/psm_ZulassungPSM_node.html",
+							"value":"024658-00"
+						}
+				},
+				{
+					"@context": {
+						"@language": "en",
+						"@vocab": "https://bioschemas.org/"
+						},
+						"@type":"ChemicalSubstance",
+						"name":"Alto 100 SL"
+				},
+				{
+					"@context": {
+						"@language": "en",
+						"@vocab": "https://bioschemas.org/"
+						},
+						"@type":"ChemicalSubstance",
+						"name":"Alverde",
+						"identifier":{
+							"@type": "PropertyValue",
+							"name":"Zulassungsnummer",
+							"url":"https://www.bvl.bund.de/DE/Arbeitsbereiche/04_Pflanzenschutzmittel/01_Aufgaben/02_ZulassungPSM/psm_ZulassungPSM_node.html",
+							"value":"006102-00"
+						}
+				}
+			],
+    "license": "CC BY"
 }
