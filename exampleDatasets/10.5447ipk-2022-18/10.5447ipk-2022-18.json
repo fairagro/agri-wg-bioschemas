@@ -1,0 +1,59 @@
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "name": "Agronomic and quality phenotypic data of a panel of pan-european elite wheat cultivars",
+    "identifier": "https://doi.ipk-gatersleben.de/DOI/0d231c04-2536-42d6-a3f5-7b8a1cbe9130/4ad6db59-08f9-45b4-8c00-951fce586834/0",
+    "description": "We present herein the phenotypic data of an elite European cultivar panel comprising 358 winter and 14 summer wheat varieties released between 1975 to 2007. The phenotypic data corresponds to seven agronomic [heading date (HD)",
+	"author": {
+		"@id": "https://orcid.org/0000-0002-5990-1829",
+		"@type": "Person",
+		"givenName": "Abhishek",
+		"familyName": "Gogna"
+	},
+	"organization": {
+		"@type": "Organization",
+		"name": "Leibniz Institute of Plant Genetics and Crop Plant Research"
+	},
+    "about": [
+		{
+			"@comment": "Extracted from i_investigation.txt",
+			"@type": "Place",
+			"latitude": "51.827721",
+			"longitude": "11.27778"
+		},
+		{
+			"@comment": "Extracted from s_alpha_lattice",
+			"@type": "Place",
+			"@id": "#plot_genotype_1",
+			"latitude": "48.1333333333",
+			"longitude": "1.13333333333"
+		},
+		{
+			"@comment": "Extracted from s_alpha_lattice",
+			"@type": "BioSample",
+			"@id": "#sample_1",
+			"taxonomicRange": "http://purl.obolibrary.org/obo/NCBITaxon_4565",
+			"additionalProperty": [
+				{
+					"@type": "PropertyValue",
+					"name": "cultivar",
+					"propertyID": "http://aims.fao.org/aos/agrovoc/c_8157",
+					"value": "Actros",
+					"url": [
+						"https://www.proplanta.de/Pflanzenbauberater/Sorten/Actros-Winterweichweizen_sks_3200WW1.html",
+						"http://wheatpedigree.net/sort/show/88364"
+					]
+				},
+				{
+					"@type": "PropertyValue",
+					"additionalType": "Place",
+					"@id": "#plot_genotype_1"
+				}
+			]
+		}
+	],
+    "license": "https://creativecommons.org/licenses/by/4.0/legalcode"
+}
