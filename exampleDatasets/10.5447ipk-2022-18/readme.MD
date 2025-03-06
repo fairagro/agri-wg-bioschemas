@@ -14,6 +14,5 @@
 - Crop information is linked to sample place.
 
 # TO-DOs
-- Assay file contains additional sample information, but unclear what terms actually describe.
-
+- add additional properties from terms.
 
