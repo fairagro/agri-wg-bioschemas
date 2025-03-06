@@ -39,7 +39,7 @@
 			]
 		},
 		{
-			"@comment": "Extracted from s_alpha_lattice",
+			"@comment": "Extracted from s_alpha_lattice, a_alpha_lattice",
 			"@type": "BioSample",
 			"@id": "#sample_1",
 			"taxonomicRange": "http://purl.obolibrary.org/obo/NCBITaxon_4565",
@@ -68,6 +68,13 @@
 					"@type": "PropertyValue",
 					"name": "cultivarReleaseYear",
 					"value": "2007"
+				},
+				{
+					"@type": "PropertyValue",
+					"name": "headingDate",
+					"description": "Heading date (HD) - days to heading from first January in a given year",
+					"value": "150",
+					"unitCode": "http://purl.obolibrary.org/obo/UO_0000033"
 				}
 			]
 		}
