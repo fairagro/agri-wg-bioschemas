@@ -113,7 +113,7 @@
 						"@type": "PropertyValue",
 						"name":"soilP",
 						"propertyID":"http://opendata.inra.fr/anaeeThes/c_4daedadd",
-						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'Content or amount of total nitrogen in soil.'",
+						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'Content or amount of total phosphorus in soil.'",
 						"value":"6.7"
 					},
 					{
@@ -150,20 +150,6 @@
 						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001840",
 						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
 						"value":"2.5"
-					},
-					{
-						"@type": "PropertyValue",
-						"name":"soilCu",
-						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001840",
-						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
-						"value":"2.5"
-					},
-					{
-						"@type": "PropertyValue",
-						"name":"soilMn",
-						"propertyID":"http://opendata.inra.fr/anaeeThes/c_bdd23954",
-						"description":"Unsure if semantically correct concept was chosen due to uncertainty in abbreviation; 'content of copper (CHEBI:28694) in soil'",
-						"value":"42"
 					},
 					{
 						"@type": "PropertyValue",
