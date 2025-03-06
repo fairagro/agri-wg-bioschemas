@@ -29,7 +29,14 @@
 			"@type": "Place",
 			"@id": "#plot_genotype_1",
 			"latitude": "48.1333333333",
-			"longitude": "1.13333333333"
+			"longitude": "1.13333333333",
+			"additionalProperty": [
+				{
+					"@type": "PropertyValue",
+					"name": "communeNearLocation",
+					"value": "Andelu"
+				}
+			]
 		},
 		{
 			"@comment": "Extracted from s_alpha_lattice",
@@ -51,9 +58,19 @@
 					"@type": "PropertyValue",
 					"additionalType": "Place",
 					"@id": "#plot_genotype_1"
+				},
+				{
+					"@type": "PropertyValue",
+					"name": "studyYear",
+					"value": "2009"
+				},
+				{
+					"@type": "PropertyValue",
+					"name": "cultivarReleaseYear",
+					"value": "2007"
 				}
 			]
 		}
 	],
     "license": "https://creativecommons.org/licenses/by/4.0/legalcode"
-}
+},
