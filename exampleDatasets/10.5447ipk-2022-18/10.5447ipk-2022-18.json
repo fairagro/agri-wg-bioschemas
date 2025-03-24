@@ -7,12 +7,20 @@
     "name": "Agronomic and quality phenotypic data of a panel of pan-european elite wheat cultivars",
     "identifier": "https://doi.ipk-gatersleben.de/DOI/0d231c04-2536-42d6-a3f5-7b8a1cbe9130/4ad6db59-08f9-45b4-8c00-951fce586834/0",
     "description": "We present herein the phenotypic data of an elite European cultivar panel comprising 358 winter and 14 summer wheat varieties released between 1975 to 2007. The phenotypic data corresponds to seven agronomic [heading date (HD)",
-	"author": {
-		"@id": "https://orcid.org/0000-0002-5990-1829",
-		"@type": "Person",
-		"givenName": "Abhishek",
-		"familyName": "Gogna"
-	},
+	"author": [
+		{
+			"@id": "https://orcid.org/0000-0002-5990-1829",
+			"@type": "Person",
+			"givenName": "Abhishek",
+			"familyName": "Gogna"
+		},
+		{
+            "@id": "https://orcid.org/0000-0002-9365-0939",
+            "@type": "Person",
+            "givenName": "Albert",
+            "familyName": "Schulthess"
+        }
+	],
 	"organization": {
 		"@type": "Organization",
 		"name": "Leibniz Institute of Plant Genetics and Crop Plant Research"
@@ -56,6 +64,11 @@
 				},
 				{
 					"@type": "PropertyValue",
+					"name": "cultivarReleaseYear",
+					"value": "2007"
+				},
+				{
+					"@type": "PropertyValue",
 					"additionalType": "Place",
 					"@id": "#plot_genotype_1"
 				},
@@ -66,18 +79,90 @@
 				},
 				{
 					"@type": "PropertyValue",
-					"name": "cultivarReleaseYear",
-					"value": "2007"
-				},
-				{
-					"@type": "PropertyValue",
 					"name": "headingDate",
 					"description": "Heading date (HD) - days to heading from first January in a given year",
-					"value": "150",
+					"value": 150,
 					"unitCode": "http://purl.obolibrary.org/obo/UO_0000033"
-				}
+				},
+				{
+                    "@type": "PropertyValue",
+                    "name": "plantHeight",
+					"description": "Plant height (PH) - average plant height pre-harvest",
+                    "value": "92",
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000015",
+					"propertyID": "http://aims.fao.org/aos/agrovoc/c_61f3cae5"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "thousandGrainWeight",
+					"description": "Thousand grain weight (TKW) - weight of thousand grains",
+                    "value": "54",
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000021",
+					"propertyID": "http://aims.fao.org/aos/agrovoc/c_36510"
+                },
+                {
+                    "@type": "PropertyValue",
+					"name": "grainsPerEar",
+					"description": "Grains per ear (GPE) - average number of grains from 10 ear samples pre-harvest",
+					"value": 45.8,
+					"propertyID": "https://cropontology.org/term/CO_321:0000038"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "yield",
+					"description": "Yield (GY) - plot yield",
+                    "value": "99.17",
+                    "unitCode": "dt/ha",
+					"propertyID": "http://aims.fao.org/aos/agrovoc/c_10176"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "specificWeight",
+					"description": "Specific weight (SW) - specific weight of grains.",
+                    "value": "76.4",
+                    "unitCode": "kg/hL"
+                },
+				{
+                    "@type": "PropertyValue",
+                    "name": "grainHardiness",
+					"description": "Grain hardiness (GH)",
+                    "value": "49",
+                    "unitCode": "%"
+				},
+                {
+                    "@type": "PropertyValue",
+                    "name": "proteinContent",
+					"description": "Protein content (PC) were measured using NIR grain analyzer.",
+                    "value": "11.3",
+                    "unitCode": "%",
+					"propertyID": "http://aims.fao.org/aos/agrovoc/c_6251"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "sedimentationTest",
+					"description": "Sedimentation test (SDS)",
+                    "value": "64",
+                    "unitCode": "ml",
+					"propertyID": "https://cropontology.org/rdf/CO_321:0000147"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "hagbergFallingNumber",
+					"description": "Hagberg falling number (HAG) ",
+                    "value": "",
+                    "unitCode": "sec",
+					"propertyID": "https://cropontology.org/rdf/CO_321:0000071"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "name": "zelenySedimentationIndex",
+					"description": "Zeleny sedimentation index (ZEL)",
+                    "value": "39",
+                    "unitCode": "ml",
+					"propertyID": "https://cropontology.org/rdf/CO_321:0000147"
+                }
 			]
 		}
 	],
     "license": "https://creativecommons.org/licenses/by/4.0/legalcode"
-},
+}

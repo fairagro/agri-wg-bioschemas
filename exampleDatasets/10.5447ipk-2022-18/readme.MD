@@ -12,7 +12,4 @@
 # Crop
 - Information taken from `s_alpha_lattice.txt` file and modeled as BioSample.
 - Crop information is linked to sample place.
-
-# TO-DOs
-- add additional properties from terms.
-
+- A lot of crop properties, used agrovoc + crop ontology for property values
