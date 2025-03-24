@@ -94,9 +94,9 @@
                 },
                 {
                     "@type": "PropertyValue",
-                    "name": "thousandGrainWeight",
-					"description": "Thousand grain weight (TKW) - weight of thousand grains",
-                    "value": "54",
+                    "name": "grainWeight",
+					"description": "Weight of grains",
+                    "value": "0.0054",
                     "unitCode": "http://purl.obolibrary.org/obo/UO_0000021",
 					"propertyID": "http://aims.fao.org/aos/agrovoc/c_36510"
                 },
@@ -127,22 +127,22 @@
                     "name": "grainHardiness",
 					"description": "Grain hardiness (GH)",
                     "value": "49",
-                    "unitCode": "%"
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000187"
 				},
                 {
                     "@type": "PropertyValue",
                     "name": "proteinContent",
 					"description": "Protein content (PC) were measured using NIR grain analyzer.",
                     "value": "11.3",
-                    "unitCode": "%",
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000187",
 					"propertyID": "http://aims.fao.org/aos/agrovoc/c_6251"
                 },
                 {
                     "@type": "PropertyValue",
-                    "name": "sedimentationTest",
+                    "name": "sedimentationTestIndex",
 					"description": "Sedimentation test (SDS)",
                     "value": "64",
-                    "unitCode": "ml",
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000098",
 					"propertyID": "https://cropontology.org/rdf/CO_321:0000147"
                 },
                 {
@@ -150,7 +150,7 @@
                     "name": "hagbergFallingNumber",
 					"description": "Hagberg falling number (HAG) ",
                     "value": "",
-                    "unitCode": "sec",
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000010",
 					"propertyID": "https://cropontology.org/rdf/CO_321:0000071"
                 },
                 {
@@ -158,8 +158,7 @@
                     "name": "zelenySedimentationIndex",
 					"description": "Zeleny sedimentation index (ZEL)",
                     "value": "39",
-                    "unitCode": "ml",
-					"propertyID": "https://cropontology.org/rdf/CO_321:0000147"
+                    "unitCode": "http://purl.obolibrary.org/obo/UO_0000098"
                 }
 			]
 		}
