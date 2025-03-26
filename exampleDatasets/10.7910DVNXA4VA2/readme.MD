@@ -4,7 +4,8 @@
 - Field, Crop and Soil metadata taken from NZ_AgMIP_dataset.xlsx file
 
 # Field 
-- Information taken from "Fields" sheet and modeled as schema:Place.
+- Information taken from "Fields" sheet and modeled as https://schema.org/Place.
+- "elevation" is currently modeled via https://schema.org/additionalProperty but we could also use https://schema.org/elevation if we attach the coordinates not directly to https://schema.org/Place but to a https://schema.org/GeoCoordinates object via https://schema.org/geo. What are the different implications?
 - Is location metadata such as city names relevant? How to model?
 
 # Crop

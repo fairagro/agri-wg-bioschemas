@@ -1,0 +1,123 @@
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "name": "Dataset: Temporal dynamics in the compositional relationships of cropland microbiomes",
+    "identifier": "https://doi.org/10.3220/DATA20240627155423-0",
+    "description": "The data deposited here refer to the publication of research results in connection with the MonViA project (monitoring of biological diversity in agricultural landscapes). On three neighboring fields of a farm near Hildesheim, the abundance and diversity of the soil microbiological community was recorded in a 14-day time grid over a period of 2 years. On the fields, which differed in soil texture (loam and clay) and tillage (conservation and conventional), agricultural measures were carried out according to conventional practice. In order to investigate influencing factors, meteorological data and physicochemical soil properties were recorded in parallel (pH value, organic carbon and total nitrogen content). For microbiological characterization, soil DNA was examined using PCR methods. The abundance was determined with quantitative PCR (qPCR), the diversity with the sequencing of PCR products using IlluminaMiSeq technology.",
+    "about": [
+			{
+				"@type": "Place",
+				"@id": "CS_field",
+				"latitude":"52° 00' 29.2 N",
+				"longitude":"9° 55' 41.9 E",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_7698",
+						"description":"Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.",
+						"value":"Clay with soil conservation tillage"
+					}
+				]
+			},
+			{
+				"@type": "Place",
+				"@id": "LS_field",
+				"latitude":"52° 00' 27.4 N",
+				"longitude":"9° 56' 13.6 E",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_7698",
+						"description":"Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.",
+						"value":"Loam with soil conservation tillage"
+					}
+				]
+			},
+			{
+				"@type": "Place",
+				"@id": "LV_field",
+				"latitude":"52° 00' 29.2 N",
+				"longitude":" 9° 56' 29.6 E",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_7698",
+						"description":"Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.",
+						"value":"Loam with conventional tillage"
+					}
+				]
+			},
+			{
+				"@type": "BioSample",
+				"@id": "winterWheat",
+				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_7950"
+			},
+			{
+				"@type": "BioSample",
+				"@id": "oat",
+				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_731"
+			},
+			{
+				"@type": "BioSample",
+				"@id": "sugarBeet",
+				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_731"
+			},
+			{
+				"@type": "BioSample",
+				"@id": "siloMaize",
+				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_8504"
+			},
+			
+			{
+				"@type": "Sample",
+				"@id":"Soil_Sample_1",
+				"dateCollected":"17.03.2020",
+				"locationOfOrigin": "@CS_field",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"season",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_6911",
+						"description":"The season the sample was taken in",
+						"value":"Spring"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"C",
+						"propertyID":"https://lod.nal.usda.gov/nalt/325192",
+						"description":"Soil carbon",
+						"value":"1,93"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"N",
+						"propertyID":"http://opendata.inrae.fr/thesaurusINRAE/c_13527",
+						"description":"Soil nitrogen",
+						"value":"0,17"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilpHValue",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_34901",
+						"description":"Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.",
+						"value":"7,68"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"CtoN",
+						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001809",
+						"description":"any measurable or observable characteristic related to ratio between the content of carbon and the content of nitrogen of the soil",
+						"value":"11,19"
+					}
+					
+				]
+			}
+		],
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+}
