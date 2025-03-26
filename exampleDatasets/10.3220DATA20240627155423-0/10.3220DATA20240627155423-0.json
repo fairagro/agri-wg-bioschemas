@@ -73,7 +73,6 @@
 				"@id": "siloMaize",
 				"taxonomicRange": "http://aims.fao.org/aos/agrovoc/c_8504"
 			},
-			
 			{
 				"@type": "Sample",
 				"@id":"Soil_Sample_1",
@@ -115,9 +114,104 @@
 						"description":"any measurable or observable characteristic related to ratio between the content of carbon and the content of nitrogen of the soil",
 						"value":"11,19"
 					}
-					
+				]
+			},
+			{
+				"@type": "Sample",
+				"@id":"Soil_Sample_2",
+				"dateCollected":"17.03.2020",
+				"locationOfOrigin": "@CS_field",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"season",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_6911",
+						"description":"The season the sample was taken in",
+						"value":"Spring"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"C",
+						"propertyID":"https://lod.nal.usda.gov/nalt/325192",
+						"description":"Soil carbon",
+						"value":"1,96"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"N",
+						"propertyID":"http://opendata.inrae.fr/thesaurusINRAE/c_13527",
+						"description":"Soil nitrogen",
+						"value":"0,20"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilpHValue",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_34901",
+						"description":"Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.",
+						"value":"7,55"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"CtoN",
+						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001809",
+						"description":"any measurable or observable characteristic related to ratio between the content of carbon and the content of nitrogen of the soil",
+						"value":"9,96"
+					}
+				]
+			},
+			{
+				"@type": "Sample",
+				"@id":"Soil_Sample_5",
+				"dateCollected":"17.03.2020",
+				"locationOfOrigin": "@LS_field",
+				"additionalProperty":[
+					{
+						"@type": "PropertyValue",
+						"name":"season",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_6911",
+						"description":"The season the sample was taken in",
+						"value":"Spring"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"C",
+						"propertyID":"https://lod.nal.usda.gov/nalt/325192",
+						"description":"Soil carbon",
+						"value":"1,16"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"N",
+						"propertyID":"http://opendata.inrae.fr/thesaurusINRAE/c_13527",
+						"description":"Soil nitrogen",
+						"value":"0,13"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"soilpHValue",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_34901",
+						"description":"Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.",
+						"value":"6,68"
+					},
+					{
+						"@type": "PropertyValue",
+						"name":"CtoN",
+						"propertyID":"http://opendata.inra.fr/EOL/EOL_0001809",
+						"description":"any measurable or observable characteristic related to ratio between the content of carbon and the content of nitrogen of the soil",
+						"value":"8,94"
+					}
 				]
 			}
 		],
-    "license": "https://creativecommons.org/licenses/by/4.0/"
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+		"spatialCoverage":{
+			"@type": "Place",
+			"name":"Adenstedt",
+			"identifier":{
+				"@type":"PropertyValue",
+				
+			}
+			
+			
+		}
 }

@@ -26,9 +26,16 @@
 - beside a date of the sample creation (modeled via "dateCollected") the season a sample was taken in was modeled via https://schema.org/additionalProperty
 	- Q: implications of providing the season as https://schema.org/Text vs. making it a https://schema.org/StructuredValue to use a semantic resource (e.g. https://agrovoc.fao.org/browse/agrovoc/en/page/c_6911)
 - Soil parameters (carbon, nitrogen, pH and carbon to nitrogen ration) were modeled via https://schema.org/additionalProperty
+	- Q: Units are essential for these values but were not added to the file. How can we make providing units as easy as possible? Make Unit Ontology usable? https://www.ebi.ac.uk/ols4/ontologies/uo
+	- Q: The file "F4_GenCopNum" includes information of bacteria, archaea and fungi abundance in soil samples. Is this a relevant property for our FAIRagro use cases?
+	
+# Weather
+- information taken from "F2_Meteorol" file
+- Q: The measurements of "Precipitation (per two weeks)" and "Temperature" seem to be related to the same samples taken for the soil (same "SampleID, "site", "Sample year", "Date", "Sample Time", "seasons") --> Should they be attached to the soil sample objects, the Field place objects or be their own objects? Which type should they be?
 
+# Fungi, prokaryots and protists
+- The files "F5_ASV_Proka", "F6_ASV_Fungi" and "F7_ASV_Protists" include additional information on these types of entities
+	- Q: Are these relevant for our FAIRagro use cases?
 
-
-# To-Dos 
-
-
+# To-Dos
+- create https://bioschemas.org/LabProcess and https://bioschemas.org/LabProtocol version of the metadata set to explore agricultural management activity modeling
