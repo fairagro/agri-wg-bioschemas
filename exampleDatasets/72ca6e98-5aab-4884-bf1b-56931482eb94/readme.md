@@ -1,6 +1,6 @@
 
 # Example dataset: "INPLAMINT.Nutrient.Status.Field.Experiment.Chronosequence"
-- Link: https://doi.org/10.3220/DATA20240627155423-0
+- Link: https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&doi=72ca6e98-5aab-4884-bf1b-56931482eb94
 - 
 
 
