@@ -1,0 +1,158 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "alternativeHeadline": [],
+    "creator": [
+      {
+        "@type": "Person",
+        "affiliation": "Julius Kühn-Institute (JKI), Institute for Application Techniques in Plant Protection, Germany",
+        "familyName": "Weimar-Bosse",
+        "givenName": "Carolin",
+        "identifier": [
+          "https://d-nb.info/gnd/1172033749",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1172033749"
+          }
+        ],
+        "name": "Weimar-Bosse, Carolin"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Julius Kühn-Institute (JKI), Institute for Application Techniques in Plant Protection, Germany",
+        "familyName": "Immenroth",
+        "givenName": "Eckhard",
+        "identifier": [
+          "https://d-nb.info/gnd/1172033749",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1172033749"
+          }
+        ],
+        "name": "Immenroth, Eckhard"
+      }
+    ],
+    "dateCreated": "2022",
+    "datePublished": "2023-11-27",
+    "description": [
+      "",
+      "With the Heubach method free floating dust of treated seeds can be measured. The Heubach value is used as an indicator for seed quality. One way to make the heubach results more reliable can be the definition of the limit of detection (LOD) and the limit of quantification (LOQ). Blank measurements were conducted in several heubach labs for this data collection to allow a calculation of LOD and LOQ for the Heubach method. Wheat seeds were used for the contamination of the testing device. Two Tests (Data_LOD_LOQ_wheat.xlsx) were performed following the EU-Code of Practise for the monitoring of floating dust of treated seeds (Version 05.1, published by the Seed Treatment Stewardship Steering Committee (STICCS Group) on 1st August 2021). The material and methods used are described in Material_and_methods_wheat.pdf and the procedure for estimation of LOD and LOQ for Heubach seed abrasion dust method is described in Procedure_for_the_estimation_of_LOD_and_LOQ_wheat.pdf."
+    ],
+    "headline": "Data set: blank values from heubach dustmeter-testing wheat",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5073/20231127-094029-0"
+      }
+    ],
+    "license": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "mainEntityOfPage": "https://www.openagrar.de/receive/openagrar_mods_00092233",
+    "name": "Data set: blank values from heubach dustmeter-testing wheat",
+    "publisher": {
+      "@type": "Person",
+      "name": "OpenAgrar Repository"
+    },
+		"about":
+			[
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://agrovoc.fao.org/browse/agrovoc/en/page/c_11125",
+						"name":"Triticum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7950"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"KWS Starlight"
+						}
+					]
+				}
+			],
+		"measurementTechnique":"Heubach seed abrasion dust method",
+		"variableMeasured":[
+			{
+				"name":"Lab",
+				"description":"Laboratory A-D which performed the test"
+			},
+			{
+				"name":"Empl",
+				"description":"Employee A or B in the same lab, who performed the test"
+			},
+			{
+				"name":"No",
+				"description":"Number of measurement (1-10)",
+				"unitText":"String"
+			},
+			{
+				"name":"Weight",
+				"description":"Weigth oft he filter holder in gram (g)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Humidity",
+				"propertyID":"http://opendata.inra.fr/anaeeThes/c_1438939148227",
+				"description":"Air humidity in the lab in percent (%)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000187",
+				"unitText":"percent"
+			},
+			{
+				"name":"Temperature",
+				"propertyID":"http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature",
+				"description":"Temperature in the lab in Grad Celsius (°C)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000027",
+				"unitText":"degree Celsius"
+			},
+			{
+				"name":"Seed Lot",
+				"description":"Seed lot used for contamination"
+			},
+			{
+				"name":"Empty Weight",
+				"description":"Weight of the filter holder in gram (g) before the heubach cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Full Weight",
+				"description":"Weight of the filter holder in gram (g) after the heubach cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Weight delta",
+				"description":"full weight - empty weight; weight difference resulting from the Heubach cycle"
+			},
+			{
+				"name":"Seed Weight",
+				"propertyID":"http://purl.obolibrary.org/obo/TO_0000181",
+				"description":"Weight of the seeds in gram (g) which were filled in the drum of the heubach device for the contamination cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Heubach Value SeedLot 1",
+				"description":"Heubach value of seed lot 1; determined according to the heubach method"
+			},
+			{
+				"name":"g/100kg",
+				"description":"Amount of dust in grams (g) per 100 kilogram (kg) of wheat seeds",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			}
+		]
+  }
