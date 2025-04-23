@@ -1,0 +1,119 @@
+{
+    "@context": "http://schema.org",
+    "@id": "https://doi.ipk-gatersleben.de:443/DOI/bf0ec3c5-9a86-4349-a19f-b3f7210d287c/1a76eaae-6be7-4d2a-91e1-dc7c8fb1bdcc/2",
+    "@type": "Dataset",
+    "author": [
+      {
+        "@type": "Person",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Germany",
+          "postalCode": "06466",
+          "streetAddress": "IPK Gatersleben"
+        },
+        "familyName": "Mascher",
+        "givenName": "Martin",
+        "name": "Martin Mascher"
+      },
+      {
+        "@type": "Person",
+        "address": "BioNano Genomics, San Diego, USA, 92121, USA",
+        "familyName": "Hastie",
+        "givenName": "Alex",
+        "name": "Alex Hastie"
+      },
+      {
+        "@type": "Person",
+        "address": "IEB Olomouc, 78371, Czech Republic",
+        "familyName": "Simkova",
+        "givenName": "Hana",
+        "name": "Hana Simkova"
+      },
+      {
+        "@type": "Person",
+        "address": "IEB Olomouc, 78371, Czech Republic",
+        "familyName": "Dolezel",
+        "givenName": "Jaroslav",
+        "name": "Jaroslav Dolezel"
+      },
+      {
+        "@type": "Person",
+        "address": "IPK Gatersleben, 06466, Germany",
+        "familyName": "Stein",
+        "givenName": "Nils",
+        "name": "Nils Stein"
+      }
+    ],
+    "contributor": [
+      {
+        "@type": "Person",
+        "address": "BioNano Genomics, San Diego, USA, 92121, USA",
+        "familyName": "Hastie",
+        "givenName": "Alex"
+      },
+      {
+        "@type": "Person",
+        "address": "IEB Olomouc, 78371, Czech Republic",
+        "familyName": "Simkova",
+        "givenName": "Hana"
+      },
+      {
+        "@type": "Person",
+        "address": "IEB Olomouc, 78371, Czech Republic",
+        "familyName": "Dolezel",
+        "givenName": "Jaroslav"
+      },
+      {
+        "@type": "Person",
+        "address": "IPK Gatersleben, 06466, Germany",
+        "familyName": "Stein",
+        "givenName": "Nils"
+      }
+    ],
+    "creator": [
+      {
+        "@type": "Person",
+        "address": "IPK Gatersleben, 06466, Germany",
+        "familyName": "Mascher",
+        "givenName": "Martin",
+        "name": "Martin Mascher"
+      }
+    ],
+    "datePublished": "Thu Sep 20 09:17:44 CEST 2018",
+    "description": "BioNano rawdata of barley cv. Barke were assembled using the BioNano\nIrysview software.  The assembly is provided in CMAP format.\nSpecifications of the CMAP format are available from\nhttps://github.com/bionanogenomics/File-Format-Specification-Sheets.",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "inLanguage": "en",
+    "keywords": "barley, Hordeum vulgare, optical map, genomics",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+    "name": "Optical map of barley cv. Barke",
+    "publisher": {
+      "@type": "Organization",
+      "name": "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany"
+    },
+		"about":[
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Hordeum vulgare",
+						"url":"http://aims.fao.org/aos/agrovoc/c_3662"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Barke"
+						}
+					]
+				}
+  }
