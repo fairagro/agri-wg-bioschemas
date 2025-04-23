@@ -1,0 +1,206 @@
+{
+    "@context": {
+      "@language": "en",
+      "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "about": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
+        "@type": "Class"
+      },
+			{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://agrovoc.fao.org/browse/agrovoc/en/page/c_11125",
+						"name":"Triticum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7950"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Milaneco"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Capo"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Trebelir"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Sample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+						"value":"silty clay loam"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"soilReferenceGroup",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_89f35c33",
+						"description":"The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS). ",
+						"value":"Haplic Luvisol"
+						}
+					]
+				}
+    ],
+    "author": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "Technische Universität München",
+          "name": "Nora Bissinger",
+          "url": ""
+        },
+        "name": "Technische Universität München"
+      },
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "stefanie.schulz@helmholtz-munich.de",
+          "name": "Stefanie Schulz",
+          "url": ""
+        },
+        "name": "Helmholtz Zentrum München"
+      },
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "michael.schloter@helmholtz-munich.de",
+          "name": "Michael Schloter",
+          "url": ""
+        },
+        "name": "Helmholtz Zentrum München"
+      }
+    ],
+    "conditionsOfAccess": [
+      "Restrictions applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata. Reports, articles, papers, scientific and non - scientific works of any form, including tables, maps, or any other kind of output, in printed or electronic form, based in whole or in part on the data supplied, must contain an acknowledgement of the form: \"Data reused from the BonaRes Data Centre www.bonares.de. This data were created as part of the BonaRes Module A-Project - BonaRes - Soil3's research activities.\" Although every care has been taken in preparing and testing the data, the BonaRes Module A-Project - BonaRes - Soil3 and the BonaRes Data Centre cannot guarantee that the data are correct; neither does the BonaRes Module A-Project - BonaRes - Soil3 and the BonaRes Data Centre accept any liability whatsoever for any error, missing data or omission in the data, or for any loss or damage arising from its use. The BonaRes Module A-Project - BonaRes - Soil3 and BonaRes Data Centre will not be responsible for any direct or indirect use which might be made of the data."
+    ],
+    "dateCreated": [
+      "2024-08-01"
+    ],
+    "dateModified": [
+      "2024-08-01"
+    ],
+    "datePublished": [
+      "2024-08-01"
+    ],
+    "description": "Bacterial and archaeal abundance in top and subsoil samples in a field trail with mechanical strip-wise subsoil loosening and addition of biocompost  - Codes.",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=158fb92b-70b4-4dbf-9176-2ce4de69agmd:fc6",
+        "description": "download",
+        "encodingFormat": [
+          "CSV",
+          "Microsoft Excel (xlsx)",
+          "File-Geodatabase",
+          "TXT"
+        ]
+      }
+    ],
+    "identifier": [
+      "158fb92b-70b4-4dbf-9176-2ce4de69afc6",
+      "158fb92b-70b4-4dbf-9176-2ce4de69afc6"
+    ],
+    "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "BonaRes Repository"
+    },
+    "keywords": [
+      "Soil",
+      "roots",
+      "opendata; subsoil ameloration; compost addition; winter wheat cultivars; bulk soil",
+      "Boden"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "Bacterial and archaeal abundance in top and subsoil samples in a field trail with mechanical strip-wise subsoil loosening and addition of biocompost  - Codes",
+    "publisher": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "dataservice@zalf.de",
+          "name": "ZALF",
+          "telephone": "+49 33432 82 300"
+        },
+        "name": "Leibniz Centre for Agricultural Landscape Research (ZALF)"
+      }
+    ],
+    "sourceOrganization": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "wulf.amelung@uni-bonn.de",
+          "name": "Wulf Amelung",
+          "url": ""
+        },
+        "name": "Universität Bonn"
+      }
+    ],
+    "spatialCoverage": [
+      {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "49.59 6.12 51.54 8.49"
+        }
+      }
+    ],
+		"variableMeasured":[
+			{
+				"@type": "PropertyValue",
+				"name":"sample_type",
+				"description":"sample_type"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Treatment",
+				"description":"This column experimental treatments: with mechanical strip-wise deep loosening and biocompost addition (DLB) and control without subsoil management (control)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"genotype",
+				"description":"This column contains different cultivars of winter wheat."
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"depth",
+				"propertyID":"http://aims.fao.org/aos/agrovoc/c_0c184d6f",
+				"description":"depth"
+			}
+		]
+  }

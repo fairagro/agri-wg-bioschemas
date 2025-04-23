@@ -93,25 +93,30 @@
 		"measurementTechnique":"Heubach seed abrasion dust method",
 		"variableMeasured":[
 			{
+				"@type": "PropertyValue",
 				"name":"Lab",
 				"description":"Laboratory A-D which performed the test"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Empl",
 				"description":"Employee A or B in the same lab, who performed the test"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"No",
 				"description":"Number of measurement (1-10)",
 				"unitText":"String"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Weight",
 				"description":"Weigth oft he filter holder in gram (g)",
 				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
 				"unitText":"gram"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Humidity",
 				"propertyID":"http://opendata.inra.fr/anaeeThes/c_1438939148227",
 				"description":"Air humidity in the lab in percent (%)",
@@ -119,6 +124,7 @@
 				"unitText":"percent"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Temperature",
 				"propertyID":"http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature",
 				"description":"Temperature in the lab in Grad Celsius (°C)",
@@ -126,26 +132,31 @@
 				"unitText":"degree Celsius"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Seed Lot",
 				"description":"Seed lot used for contamination"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Empty Weight",
 				"description":"Weight of the filter holder in gram (g) before the heubach cycle",
 				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
 				"unitText":"gram"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Full Weight",
 				"description":"Weight of the filter holder in gram (g) after the heubach cycle",
 				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
 				"unitText":"gram"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Weight delta",
 				"description":"full weight - empty weight; weight difference resulting from the Heubach cycle"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Seed Weight",
 				"propertyID":"http://purl.obolibrary.org/obo/TO_0000181",
 				"description":"Weight of the seeds in gram (g) which were filled in the drum of the heubach device for the contamination cycle",
@@ -153,10 +164,12 @@
 				"unitText":"gram"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"Heubach Value SeedLot 1",
 				"description":"Heubach value of seed lot 1; determined according to the heubach method"
 			},
 			{
+				"@type": "PropertyValue",
 				"name":"g/100kg",
 				"description":"Amount of dust in grams (g) per 100 kilogram (kg) of wheat seeds",
 				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
