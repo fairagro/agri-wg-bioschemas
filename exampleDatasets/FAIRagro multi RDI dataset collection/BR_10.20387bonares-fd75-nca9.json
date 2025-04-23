@@ -1,0 +1,543 @@
+{
+    "@context": {
+      "@language": "en",
+      "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "about": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
+        "@type": "Class"
+      },
+			{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":"pickled cucumber",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.02.01"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"NZ-St.909/72"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Perenta"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":"iceberg lettuce",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.01.05"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Challenge"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"name":"Lactuca sativa var. capitata",
+						"url":"http://aims.fao.org/aos/agrovoc/c_c388c31b"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.01.05"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Megicain"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"name":"Daucus carota",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"url":"http://aims.fao.org/aos/agrovoc/c_2132"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.03.01"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Karotan"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Lange Rote Stumpfe"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Frühmöhre Nantya"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":"peel cucumber",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.02.01"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Fatum"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Travito"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Wusena"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"name":"Apium graveolens",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"url":"http://aims.fao.org/aos/agrovoc/c_535"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Anita"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Apia"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Monarch"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":"white cabbage",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"Icc_Code",
+						"value":"2.01.03"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Bartolo"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Langendijker"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Marchello"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Türkis"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":"zucchini",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Diamant"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Sample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+						"value":"weak loamy sand"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"soilReferenceGroup",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_89f35c33",
+						"description":"The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS). ",
+						"value":"Arenic Luvisol"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Sample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+						"value":"heavy sandy loam"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"soilReferenceGroup",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_89f35c33",
+						"description":"The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS). ",
+						"value":"Gleyic Fluvisol"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Sample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"soilTexture",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+						"value":"medium clayey silt"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"soilReferenceGroup",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_89f35c33",
+						"description":"The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS). ",
+						"value":"Luvic-Phaeozem"
+						}
+					]
+				}
+    ],
+    "author": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "boenecke@igzev.de",
+          "name": "Eric Bönecke"
+        },
+        "name": "Leibniz-Institut für Gemüse- und Zierpflanzenbau - IGZ"
+      },
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "dominik.mueller2@student.uni-halle.de",
+          "name": "Dominik Müller"
+        },
+        "name": "Martin-Luther University Halle-Wittenberg"
+      },
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "ruehlmann@igzev.de",
+          "name": "Jörg Rühlmann"
+        },
+        "name": "Leibniz-Institut für Gemüse- und Zierpflanzenbau - IGZ"
+      }
+    ],
+    "conditionsOfAccess": [
+      "Restrictions applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations or warnings on using the resource or metadata. Reports, articles, papers, scientific and non - scientific works of any form, including tables, maps, or any other kind of output, in printed or electronic form, based in whole or in part on the data supplied, must contain an acknowledgement of the form: \"Data reused from the BonaRes Data Centre www.bonares.de. This data were created as part of the Other's research activities.\" Although every care has been taken in preparing and testing the data, the Other and the BonaRes Data Centre cannot guarantee that the data are correct; neither does the Other and the BonaRes Data Centre accept any liability whatsoever for any error, missing data or omission in the data, or for any loss or damage arising from its use. The Other and BonaRes Data Centre will not be responsible for any direct or indirect use which might be made of the data."
+    ],
+    "dateCreated": [
+      "2024-08-20"
+    ],
+    "dateModified": [
+      "2024-08-19"
+    ],
+    "datePublished": [
+      "2024-08-19"
+    ],
+    "description": "50 years box plot experiment in Grossbeeren (1972 - 2022) - Plots.",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://maps.bonares.de/mapapps/resources/apps/bonares/index.html?lang=en&mid=03b52930-0210-4bfc-a4ac-75f7544ce7a5",
+        "description": "download",
+        "encodingFormat": [
+          "CSV",
+          "Microsoft Excel (xlsx)",
+          "File-Geodatabase",
+          "TXT"
+        ]
+      }
+    ],
+    "identifier": [
+      "03b52930-0210-4bfc-a4ac-75f7544ce7a5",
+      "https://doi.org/10.20387/bonares-fd75-nca9"
+    ],
+    "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "BonaRes Repository"
+    },
+    "keywords": [
+      "horticulture",
+      "long-term experiments",
+      "vegetable crops",
+      "fertilization",
+      "fertilizers",
+      "soil types",
+      "soil fertility",
+      "soil organic carbon",
+      "soil organic matter",
+      "field crops",
+      "crop management",
+      "crop production",
+      "crop rotation",
+      "crop residues",
+      "crop residue management",
+      "crop yield",
+      "nutrient balance",
+      "nutrient management",
+      "nutrient uptake",
+      "nutrient use efficiency",
+      "nutrient utilization",
+      "nitrogen",
+      "nitrogen balance",
+      "nitrogen content",
+      "nitrogen fertilizers",
+      "nitrogen-use efficiency",
+      "potassium",
+      "phosphorus",
+      "magnesium",
+      "cucumbers",
+      "Cucumis",
+      "Cucumis sativus",
+      "carrots",
+      "Daucus carota",
+      "cabbages",
+      "Brassica oleracea var. capitata",
+      "leeks",
+      "Allium ampeloprasum",
+      "celery",
+      "Apium graveolens",
+      "Apium graveolens var. rapaceum",
+      "farmyard manure",
+      "organic amendments",
+      "organic fertilizers",
+      "slurry",
+      "bark mulches",
+      "resource management",
+      "Luvisols",
+      "Fluvisols",
+      "Phaeozems",
+      "opendata",
+      "",
+      "Boden",
+      "agricultural management",
+      "horticulture",
+      "crop production",
+      "crop rotation",
+      "crop waste",
+      "cultivation",
+      "cultivation system",
+      "cultivation method",
+      "food production (agriculture)",
+      "irrigation farming",
+      "manure",
+      "mineral fertiliser",
+      "nitrogenous fertiliser",
+      "organic fertiliser",
+      "soil fertilisation",
+      "soil fertility",
+      "vegetable",
+      "vegetable cultivation",
+      "vegetable waste",
+      "yield (agricultural)",
+      "resource utilisation",
+      "organic matter",
+      "phosphate"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "50 years box plot experiment in Grossbeeren (1972 - 2022) - Plots",
+    "publisher": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "dataservice@zalf.de",
+          "name": "ZALF",
+          "telephone": "+49 33432 82 300"
+        },
+        "name": "Leibniz Centre for Agricultural Landscape Research (ZALF)"
+      }
+    ],
+    "sourceOrganization": [
+      {
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "technical support",
+          "email": "ruehlmann@igzev.de",
+          "name": "Jörg Rühlmann"
+        },
+        "name": "Leibniz-Institut für Gemüse- und Zierpflanzenbau - IGZ"
+      }
+    ],
+    "spatialCoverage": [
+      {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": " 52.31 13.26 52.40 13.38"
+        }
+      }
+    ],
+		"variableMeasured":[
+			{
+				"@type": "PropertyValue",
+				"name":"Parzelle_ID",
+				"description":"Unique ID of the plot"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Parzelle",
+				"description":"Table with detailed plot information"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Wiederholung",
+				"description":"Name of replication"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Pruefglied_ID",
+				"description":"ID of treatment"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Beginn",
+				"description":"Start of experiment/start of a new experiment design",
+				"propertyID":"http://purl.obolibrary.org/obo/CO_715_0000253"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Ende",
+				"description":"End of experiment/end of the running experiment design",
+				"propertyID":"http://purl.obolibrary.org/obo/CO_715_0000254"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Bemerkungen_ID",
+				"description":"Contains additional information"
+			}
+		]
+ }
