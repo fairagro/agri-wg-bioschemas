@@ -1,0 +1,328 @@
+{
+    "@context": "http://schema.org",
+    "@id": "https://doi.ipk-gatersleben.de:443/DOI/bf84cc9a-fbd5-415e-8da9-dbad84aa7758/ca6637e0-8b28-4c38-a3be-fcf4aca24d44/2",
+    "@type": "Dataset",
+    "author": [
+      {
+        "@type": "Person",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Germany",
+          "postalCode": "06466",
+          "streetAddress": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3"
+        },
+        "familyName": "Kale",
+        "givenName": "Sandip",
+        "name": "Sandip Kale"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Mascher",
+        "givenName": "Martin",
+        "name": "Martin Mascher"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Stein",
+        "givenName": "Nils",
+        "name": "Nils Stein"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Reif",
+        "givenName": "Jochen",
+        "name": "Jochen Reif"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Schulthess Börgel",
+        "givenName": "Albert Wilhelm",
+        "name": "Albert Wilhelm Schulthess Börgel"
+      }
+    ],
+    "contributor": [
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Mascher",
+        "givenName": "Martin"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Stein",
+        "givenName": "Nils"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Reif",
+        "givenName": "Jochen"
+      },
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Schulthess Börgel",
+        "givenName": "Albert Wilhelm"
+      }
+    ],
+    "creator": [
+      {
+        "@type": "Person",
+        "address": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany",
+        "familyName": "Kale",
+        "givenName": "Sandip",
+        "name": "Sandip Kale"
+      }
+    ],
+    "datePublished": "Mon Apr 04 17:17:34 CEST 2022",
+    "description": "RenSeq assemblies of 907 diverse T. aestivum genotypes and two control genotypes. The assemblies were generated using CLC assembler (https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-clc-assembly-cell/). The contigs from each accession were annotated with AUGUSTUS v3.3.1 using wheat gene models as training datasets and contigs with complete genes were identified. Amino acid (AA), coding sequence (CDS) and transcript sequence for each complete gene was extracted using getAnnoFasta.pl script from AUGUSTUS package. The files ending with “_updated_fasta” is the direct output of CLC assembler and contains contigs from each accession.  The files ending with “_updated_complete.gff”, “_updated_complete.mrna”, “_updated_complete.aa” and  “_updated_complete.codingseq” contain gene information in GFF3 format, transcript sequences, amino acid sequences and coding sequences respectively from each accession. Passport data and/or pedigree information and BioSamples IDs of RenSeq raw data are provided in the sample information file.",
+    "http://purl.org/dc/terms/conformsTo": {
+      "@id": "https://bioschemas.org/profiles/Dataset/1.0-RELEASE",
+      "@type": "CreativeWork"
+    },
+    "inLanguage": "en",
+    "keywords": "Triticum aestivum, wheat, resistance gene, sequence assembly, RenSeq, annotation, diversity panel",
+    "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+    "name": "Annotated resistance gene enrichment sequencing (RenSeq) assemblies of a winter wheat diversity panel",
+    "publisher": {
+      "@type": "Organization",
+      "name": "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany"
+    },
+		"about":[
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Achat",
+						"url":"http://wheatpedigree.net/sort/show/74378"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Akteur",
+						"url":"https://www.proplanta.de/Pflanzenbauberater/Sorten/Akteur-Winterweichweizen_sks_2998WW1.html"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Alceste",
+						"url":"https://dx.plos.org/10.1371/journal.pone.0057500"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Alchemy",
+						"url":"https://dx.plos.org/10.1371/journal.pone.0057500"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Alexander",
+						"url":"https://www.proplanta.de/Pflanzenbauberater/Sorten/Alexander-Winterweichweizen_sks_4786WW1.html"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Altigo",
+						"url":"http://wheatpedigree.net/sort/show/110689"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Ambition",
+						"url":"https://www.proplanta.de/Pflanzenbauberater/Sorten/Ambition-Winterweichweizen_sks_4022WW1.html"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Amundsen",
+						"url":"http://wheatpedigree.net/sort/show/114304"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Anapolis",
+						"url":"https://www.proplanta.de/Pflanzenbauberater/Sorten/Anapolis-Winterweichweizen_sks_4403WW1.html"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Triticum aestivum",
+						"url":"http://aims.fao.org/aos/agrovoc/c_7951"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Antonius",
+						"url":"http://wheatpedigree.net/sort/show/83787"
+						}
+					]
+				}
+			]
+  }
