@@ -1,0 +1,236 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "alternativeHeadline": [],
+    "creator": [
+      {
+        "@type": "Person",
+        "affiliation": "Julius Kühn-Institute (JKI), Institute for Application Techniques in Plant Protection, Germany",
+        "familyName": "Weimar-Bosse",
+        "givenName": "Carolin",
+        "identifier": [
+          "https://d-nb.info/gnd/1172033749",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1172033749"
+          }
+        ],
+        "name": "Weimar-Bosse, Carolin"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Julius Kühn-Institute (JKI), Institute for Application Techniques in Plant Protection, Germany",
+        "familyName": "Immenroth",
+        "givenName": "Eckhard",
+        "identifier": [
+          "https://d-nb.info/gnd/1172033749",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1172033749"
+          }
+        ],
+        "name": "Immenroth, Eckhard"
+      }
+    ],
+    "dateCreated": "2023",
+    "datePublished": "2023-11-27",
+    "description": [
+      "",
+      "With the Heubach method free floating dust of treated seeds can be measured. The Heubach value is used as an indicator for seed quality. One way to make the heubach results more reliable can be the definition of the limit of detection (LOD) and the limit of quantification (LOQ). Blank measurements were conducted in several heubach labs for this data collection to allow a calculation of LOD and LOQ for the Heubach method. For the conditioning of the testing device seeds from maize, barley and onion were used. Two Tests (Data_LOD_LOQ_barley_maize_onion.xlsx) were performed following the EU-Code of Practise for the monitoring of floating dust of treated seeds (Version 05.1, published by the Seed Treatment Stewardship Steering Committee (STICCS Group) on 1st August 2021). The material and methods used are described in Material_and_methods_maize_barley_onion.pdf and the procedure for estimation of LOD and LOQ for Heubach seed abrasion dust method is described in Procedure_for_the_estimation_of_LOD_and_LOQ_maize_barley_onion.pdf."
+    ],
+    "headline": "Data set: blank values from heubach dustmeter-testing maize, barley and onion",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5073/20231127-132157-0"
+      }
+    ],
+    "license": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "mainEntityOfPage": "https://www.openagrar.de/receive/openagrar_mods_00092243",
+    "name": "Data set: blank values from heubach dustmeter-testing maize, barley and onion",
+    "publisher": {
+      "@type": "Person",
+      "name": "OpenAgrar Repository"
+    },
+		"keywords":["LOD", "LOQ", "heubach", "blank value", "dust", "seed", "quality", "treatment", "maize", "barley", "onion"],
+		"about":[
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Zea mays",
+						"url":"http://aims.fao.org/aos/agrovoc/c_8504"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"KWS-GUSTAVIUS"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropThousandSeedWeight",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_d273eced",
+						"description":"The thousand-seed weight (TSW) is the weight of 1000 pure seeds from the submitted sample.",
+						"value":"29,9"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Hordeum vulgare",
+						"url":"http://aims.fao.org/aos/agrovoc/c_3662"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"KWS FLEMMING"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropThousandSeedWeight",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_d273eced",
+						"description":"The thousand-seed weight (TSW) is the weight of 1000 pure seeds from the submitted sample.",
+						"value":"40,8"
+						}
+					]
+				},
+				{
+					"@context": "https://bioschemas.org/",
+					"@type": "Biosample",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_5993",
+					"taxonomicRange":{
+						"@context": "https://bioschemas.org/",
+						"@type": "Taxon",
+						"taxonRank":"https://aims.fao.org/aos/agrovoc/c_331243",
+						"name":"Allium cepa",
+						"url":"http://aims.fao.org/aos/agrovoc/c_281"
+					},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"cropVariety",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
+						"value":"Rijnsburger-5, NL-508124751"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropThousandSeedWeight",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_d273eced",
+						"description":"The thousand-seed weight (TSW) is the weight of 1000 pure seeds from the submitted sample.",
+						"value":"3,99"
+						}
+					]
+				}
+			],
+		"measurementTechnique":"Heubach method",
+		"variableMeasured":[
+			{
+				"name":"Lab",
+				"description":"Laboratory A-D which performed the test"
+			},
+			{
+				"name":"No",
+				"description":"Number of measurement (1-10)",
+				"unitText":"String"
+			},
+			{
+				"name":"Weight",
+				"description":"Weigth oft he filter holder in gram (g)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Humidity",
+				"propertyID":"http://opendata.inra.fr/anaeeThes/c_1438939148227",
+				"description":"Air humidity in the lab in percent (%)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000187",
+				"unitText":"percent"
+			},
+			{
+				"name":"Temperature",
+				"propertyID":"http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature",
+				"description":"Temperature in the lab in Grad Celsius (°C)",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000027",
+				"unitText":"degree Celsius"
+			},
+			{
+				"name":"Seed Lot",
+				"description":"Seed lot used for contamination"
+			},
+			{
+				"name":"Empty Weight",
+				"description":"Weight of the filter holder in gram (g) before the heubach cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Full Weight",
+				"description":"Weight of the filter holder in gram (g) after the heubach cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Weight delta",
+				"description":"full weight - empty weight; weight difference resulting from the Heubach cycle"
+			},
+			{
+				"name":"Seed Weight",
+				"propertyID":"http://purl.obolibrary.org/obo/TO_0000181",
+				"description":"Weight of the seeds in gram (g) which were filled in the drum of the heubach device for the contamination cycle",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"Heubach Value",
+				"description":"Heubach value determined according to the heubach method"
+			},
+			{
+				"name":"Heubach Value SeedLot 2 (SES Vanderhave)",
+				"description":"Heubach value of seed lot 2 (breeder: SES Vanderhave) determined according to the heubach method"
+			},
+			{
+				"name":"g/100kg",
+				"description":"Amount of dust in grams (g) per 100 kilogram (kg) of wheat seeds",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"g/100.000 kernel",
+				"description":"Amount of dust in grams (g) per 100.000 seeds",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			},
+			{
+				"name":"TGW",
+				"propertyID":"https://cropontology.org/rdf/CO_367:0000123",
+				"description":"thousand grain weight in gram",
+				"unitCode":"http://purl.obolibrary.org/obo/UO_0000021",
+				"unitText":"gram"
+			}
+		]
+  }

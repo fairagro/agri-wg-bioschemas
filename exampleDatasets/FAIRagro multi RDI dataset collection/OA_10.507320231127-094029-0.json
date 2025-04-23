@@ -57,6 +57,7 @@
       "@type": "Person",
       "name": "OpenAgrar Repository"
     },
+		"keywords":["LOD", "LOQ", "heubach", "blank value", "dust", "seed", "quality", "treatment", "wheat"],
 		"about":
 			[
 				{
@@ -78,6 +79,13 @@
 						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
 						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
 						"value":"KWS Starlight"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"cropThousandSeedWeight",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_d273eced",
+						"description":"The thousand-seed weight (TSW) is the weight of 1000 pure seeds from the submitted sample.",
+						"value":"236"
 						}
 					]
 				}
