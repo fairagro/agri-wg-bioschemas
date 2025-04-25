@@ -1,0 +1,1109 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "alternativeHeadline": [],
+    "creator": [
+      {
+        "@type": "Person",
+        "affiliation": "University of Vigo",
+        "familyName": "Fernández-Calviño",
+        "givenName": "David",
+        "identifier": [
+          "https://orcid.org/0000-0003-0864-7039",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0003-0864-7039"
+          }
+        ],
+        "name": "Fernández-Calviño, David"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Vigo",
+        "familyName": "Pérez-Rodríguez",
+        "givenName": "Paula",
+        "identifier": [
+          "https://orcid.org/0000-0001-8402-3485",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-8402-3485"
+          }
+        ],
+        "name": "Pérez-Rodríguez, Paula"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Vigo",
+        "familyName": "Arias-Estévez",
+        "givenName": "Manuel",
+        "name": "Arias-Estévez, Manuel"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Vigo",
+        "familyName": "Gómez-Armesto",
+        "givenName": "Antía",
+        "identifier": [
+          "https://orcid.org/0000-0002-9129-6710",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-9129-6710"
+          }
+        ],
+        "name": "Gómez-Armesto, Antía"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Vigo",
+        "familyName": "Soto-Gómez",
+        "givenName": "Diego",
+        "identifier": [
+          "https://orcid.org/0000-0001-7439-1356",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7439-1356"
+          }
+        ],
+        "name": "Soto Gómez, Diego"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "INORDE",
+        "familyName": "Álvarez-Pousa",
+        "givenName": "Servando",
+        "name": "Álvarez-Pousa, Servando"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Zornoza",
+        "givenName": "Raúl",
+        "identifier": [
+          "https://orcid.org/0000-0001-7291-5742",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7291-5742"
+          }
+        ],
+        "name": "Zornoza, Raúl"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Lloret",
+        "givenName": "Eva",
+        "identifier": [
+          "https://orcid.org/0000-0001-8117-099X",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-8117-099X"
+          }
+        ],
+        "name": "Lloret Sevilla, Eva"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Ollio",
+        "givenName": "Irene",
+        "identifier": [
+          "https://orcid.org/0000-0002-6952-1141",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-6952-1141"
+          }
+        ],
+        "name": "Ollio, Irene"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Sánchez-Navarro",
+        "givenName": "Virginia",
+        "identifier": [
+          "https://orcid.org/0000-0002-0866-7323",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-0866-7323"
+          }
+        ],
+        "name": "Sánchez-Navarro, Virginia"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Martínez-Martínez",
+        "givenName": "Silvia",
+        "name": "Martínez-Martínez, Silvia"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Polytechnic University of Cartagena",
+        "familyName": "Acosta",
+        "givenName": "Juan Alberto",
+        "name": "Acosta, Juan Alberto"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Copenhagen",
+        "familyName": "Brandt",
+        "givenName": "Kristian Koefoed",
+        "identifier": [
+          "https://orcid.org/0000-0001-7886-9708",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7886-9708"
+          }
+        ],
+        "name": "Brandt, Kristian Koefoed"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Copenhagen",
+        "familyName": "Bo Lassen",
+        "givenName": "Simon",
+        "identifier": [
+          "https://orcid.org/0000-0002-9781-1939",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-9781-1939"
+          }
+        ],
+        "name": "Bo Lassen, Simon"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Copenhagen",
+        "familyName": "Iversen",
+        "givenName": "Susanne",
+        "name": "Iversen, Susanne"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Pitkänen",
+        "givenName": "Juha Matti",
+        "identifier": [
+          "https://orcid.org/0000-0002-4006-0302",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-4006-0302"
+          }
+        ],
+        "name": "Pitkänen, Juha Matti"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Peltoniemi",
+        "givenName": "Krista",
+        "identifier": [
+          "https://orcid.org/0000-0003-3547-0654",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0003-3547-0654"
+          }
+        ],
+        "name": "Peltoniemi, Krista"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Rajala",
+        "givenName": "Ari P",
+        "identifier": [
+          "https://orcid.org/0000-0002-3193-8865",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-3193-8865"
+          }
+        ],
+        "name": "Rajala, Ari P."
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Eskola",
+        "givenName": "Ari",
+        "name": "Eskola, Ari"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Nuutinen",
+        "givenName": "Visa",
+        "identifier": [
+          "https://orcid.org/0000-0002-8991-0830",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-8991-0830"
+          }
+        ],
+        "name": "Nuutinen, Visa"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Natural Resources Institute Finland",
+        "familyName": "Iivonen",
+        "givenName": "Sari",
+        "name": "Iivonen, Sari"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Estonian University of Life Sciences",
+        "familyName": "Shanskiy",
+        "givenName": "Merrit",
+        "identifier": [
+          "https://orcid.org/0000-0002-5689-8089",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-5689-8089"
+          }
+        ],
+        "name": "Shanskiy, Merrit"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Estonian University of Life Sciences",
+        "familyName": "Ivask",
+        "givenName": "Mari",
+        "identifier": [
+          "https://orcid.org/0000-0001-7411-4180",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7411-4180"
+          }
+        ],
+        "name": "Ivask, Mari"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Estonian University of Life Sciences",
+        "familyName": "Loit",
+        "givenName": "Kaire",
+        "identifier": [
+          "https://orcid.org/0000-0002-0426-990X",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-0426-990X"
+          }
+        ],
+        "name": "Loit, Kaire"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Estonian University of Life Sciences",
+        "familyName": "Põldmets",
+        "givenName": "Marian",
+        "name": "Põldmets, Marian"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Estonian University of Life Sciences",
+        "familyName": "Sutri",
+        "givenName": "Merit",
+        "identifier": [
+          "https://orcid.org/0000-0001-8527-8500",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-8527-8500"
+          }
+        ],
+        "name": "Sutri, Merit"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Thuenen-Institute",
+        "familyName": "Schrader",
+        "givenName": "Stefan",
+        "identifier": [
+          "https://d-nb.info/gnd/1018926852",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1018926852"
+          }
+        ],
+        "name": "Schrader, Stefan"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Thuenen-Institute",
+        "familyName": "Krause",
+        "givenName": "Marion",
+        "identifier": [
+          "https://d-nb.info/gnd/1296368270",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1296368270"
+          }
+        ],
+        "name": "Krause, Marion"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Thuenen-Institute",
+        "familyName": "El Sayed",
+        "givenName": "Sabine",
+        "identifier": [
+          "https://d-nb.info/gnd/1295946831",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "gnd",
+            "value": "1295946831"
+          }
+        ],
+        "name": "El Sayed, Sabine"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Flaechenagentur Rheinland",
+        "familyName": "Bind",
+        "givenName": "David-Alexander",
+        "identifier": [
+          "https://orcid.org/0000-0003-2487-3909",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0003-2487-3909"
+          }
+        ],
+        "name": "Bind, David-Alexander"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "EV-ILVO",
+        "familyName": "Devolder",
+        "givenName": "Thibault",
+        "identifier": [
+          "https://orcid.org/0000-0001-7998-0993",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7998-0993"
+          }
+        ],
+        "name": "Devolder, Thibaut"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "EV-ILVO",
+        "familyName": "de Sutter",
+        "givenName": "Nancy",
+        "identifier": [
+          "https://orcid.org/0000-0002-7783-2070",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-7783-2070"
+          }
+        ],
+        "name": "de Sutter, Nancy"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "PSKW",
+        "familyName": "Fleerakkers",
+        "givenName": "Sander",
+        "identifier": [
+          "https://orcid.org/0000-0001-7688-6889",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7688-6889"
+          }
+        ],
+        "name": "Fleerakkers, Sander"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "PSKW",
+        "familyName": "Hisette",
+        "givenName": "Noémie",
+        "name": "Hisette, Noémie"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Inagro",
+        "familyName": "Vanbesien",
+        "givenName": "Jasper",
+        "identifier": [
+          "https://orcid.org/0000-0002-3569-0916",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-3569-0916"
+          }
+        ],
+        "name": "Vanbesien, Jasper"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Inagro",
+        "familyName": "Vandenbroucke",
+        "givenName": "Brecht",
+        "name": "Vandenbroucke, Brecht"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Inagro",
+        "familyName": "Rapol",
+        "givenName": "Johan",
+        "name": "Rapol, Johan"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Pécs",
+        "familyName": "Dezső",
+        "givenName": "József",
+        "identifier": [
+          "https://orcid.org/0000-0002-2764-897X",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-2764-897X"
+          }
+        ],
+        "name": "Dezső, József"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Hungarian University of Agriculture and Life Sciences",
+        "familyName": "Dekemati",
+        "givenName": "Igor",
+        "identifier": [
+          "https://orcid.org/0000-0002-3898-9593",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-3898-9593"
+          }
+        ],
+        "name": "Dekemati, Igor"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "Hungarian University of Agriculture and Life Sciences",
+        "familyName": "Simon",
+        "givenName": "Barbara",
+        "identifier": [
+          "https://orcid.org/0000-0002-6357-0866",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0002-6357-0866"
+          }
+        ],
+        "name": "Simon, Barbara"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "University of Belgrade",
+        "familyName": "Grujić",
+        "givenName": "Nikola",
+        "name": "Grujić, Nikola"
+      },
+      {
+        "@type": "Person",
+        "affiliation": "EV-ILVO",
+        "familyName": "Waeyenberge",
+        "givenName": "Lieven",
+        "identifier": [
+          "https://orcid.org/0000-0001-7408-5738",
+          {
+            "@type": "PropertyValue",
+            "propertyID": "orcid",
+            "value": "0000-0001-7408-5738"
+          }
+        ],
+        "name": "Waeyenberge, Lieven"
+      }
+    ],
+    "datePublished": "2023-03-05",
+    "description": [
+      "",
+      "This data set contains general soil characteristics from wheat fields sampled (0-30 cm) in conventional and organic farms from 9 European pedoclimatic regions (Mediterranean South, Mediterranean North, Lusitanean, Atlantic Central, Atlantic North, Continental, Pannonian, Nemoral and Boreal). This data set is part of the work performed in WP3 SoildiverAgro project, funded by the European Commission Horizon 2020 programme [grant agreement 817819]."
+    ],
+    "headline": "General soil properties of wheat fields along 9 Pedoclimatic regions in Europe",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "doi",
+        "value": "10.5281/ZENODO.7682445"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "intern",
+        "value": "TI-Zenodo"
+      }
+    ],
+    "license": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "mainEntityOfPage": "https://www.openagrar.de/receive/openagrar_mods_00088728",
+    "name": "General soil properties of wheat fields along 9 Pedoclimatic regions in Europe",
+    "publisher": {
+      "@type": "Person",
+      "name": "Zenodo"
+    },
+		"keywords":["wheat", "soil", "organic", "conventional", "general characteristics"],
+		"about":[
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO1A",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"silt loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO1B",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"silt loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO1C",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"silt loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO2A",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"silt loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO3A",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"sandy loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO4A",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"sandy loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO4B",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"sandy loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO4C",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"sandy loam"
+					}
+				]
+			},
+			{
+				"@context": "https://bioschemas.org/",
+				"@type": "Sample",
+				"@id":"ACO5A",
+				"additionalType":"http://aims.fao.org/aos/agrovoc/c_7156",
+				"additionalProperty":
+				[
+					{
+					"@type": "PropertyValue",
+					"name":"soilTexture",
+					"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
+					"description":"The relative proportions of the various sized groups of individual soil grains in a mass of soil. Specifically, it refers to the proportions of clay, silt, and sand below 2 mm in size (fine earth fraction).(en)",
+					"value":"sandy loam"
+					}
+				]
+			}
+		],
+		"variableMeasured":[
+			{
+				"@type": "PropertyValue",
+				"name":"Sampling date",
+				"propertyID":"",
+				"unitText":"YYYY-MM-DD",
+				"unitCode":""
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Soil sampling depth",
+				"alternateName":"Sampling depth",
+				"propertyID":"",
+				"unitText":"cm",
+				"unitCode":""
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Bulk density 0-10 cm",
+				"alternateName":"BD (0-10)",
+				"propertyID":"",
+				"unitText":"g/cm3",
+				"unitCode":"",
+				"measurementTechnique":"cylinder and gravimetric method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Bulk density 10-25 cm",
+				"alternateName":"BD (10-25)",
+				"propertyID":"",
+				"unitText":"g/cm3",
+				"unitCode":"",
+				"measurementTechnique":"cylinder and gravimetric method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Coarse sand",
+				"alternateName":"CSa",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Fine sand",
+				"alternateName":"FSa",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Coarse silt",
+				"alternateName":"CSi",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Fine silt",
+				"alternateName":"FSi",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Sand content",
+				"alternateName":"SA",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Silt content",
+				"alternateName":"SI",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Clay content",
+				"alternateName":"CL",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"wet sieving and pipette method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"pH in water",
+				"alternateName":"pH_w",
+				"propertyID":"",
+				"unitText":"adimentional",
+				"unitCode":"",
+				"measurementTechnique":"1:5 soil-deionized water ratio and potentiometric determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"pH in KCl",
+				"alternateName":"pH_KCl",
+				"propertyID":"",
+				"unitText":"adimentional",
+				"unitCode":"",
+				"measurementTechnique":"1:5 soil-KCl ratio and potentiometric determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"pH in CaCl2",
+				"alternateName":"pH_CaCl2",
+				"propertyID":"",
+				"unitText":"adimentional",
+				"unitCode":"",
+				"measurementTechnique":"1:5 soil-CaCl2 ratio and potentiometric determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Electrical conductivity",
+				"alternateName":"EC",
+				"propertyID":"",
+				"unitText":"dS/m",
+				"unitCode":"",
+				"measurementTechnique":"1:5 soil-deionized water ratio and conductivity determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Organic Matter",
+				"alternateName":"OM",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"calcination at 450°C for 4 h"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Total C",
+				"alternateName":"TC",
+				"propertyID":"",
+				"unitText":"g/kg",
+				"unitCode":"",
+				"measurementTechnique":"Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Total organic C",
+				"alternateName":"TOC",
+				"propertyID":"",
+				"unitText":"g/kg",
+				"unitCode":"",
+				"measurementTechnique":"Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Labile C",
+				"alternateName":"LC",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"K2SO4 0.5M extraction and Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Particulate organic C",
+				"alternateName":"POC",
+				"propertyID":"",
+				"unitText":"g/kg",
+				"unitCode":"",
+				"measurementTechnique":"53 µm-wet sieving and Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Mineral associated organic C",
+				"alternateName":"MOC",
+				"propertyID":"",
+				"unitText":"g/kg",
+				"unitCode":"",
+				"measurementTechnique":"53 µm-wet sieving and Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Total N",
+				"alternateName":"Nt",
+				"propertyID":"",
+				"unitText":"g/kg",
+				"unitCode":"",
+				"measurementTechnique":"Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Cation exchange capacity",
+				"alternateName":"CEC",
+				"propertyID":"",
+				"unitText":"cmol/kg",
+				"unitCode":"",
+				"measurementTechnique":"BaCl2 extraction and ICP-OES determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Exchangeable Ca",
+				"alternateName":"Caex",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"BaCl2 extraction and ICP-OES determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Exchangeable Mg",
+				"alternateName":"Mgex",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"BaCl2 extraction and ICP-OES determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Exchangeable K",
+				"alternateName":"Kex",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"BaCl2 extraction and ICP-OES determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Exchangeable Na",
+				"alternateName":"Naex",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"BaCl2 extraction and ICP-OES determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Sum of bases",
+				"alternateName":"Bs",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"sum of base cations determined by ICP-OES"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"CaCO3",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"Elemental Analyser"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Rock fragments and gravels",
+				"alternateName":"Rfg",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil sieving (< 2 mm)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Actual field moisture content",
+				"alternateName":"FMa",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"oven-dried soil and gravimetric method"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"NH4+",
+				"alternateName":"NH4",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"KCl 2M extraction (1:10) and colorimetric determination"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"NO3-",
+				"alternateName":"NO3",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"deionized water extraction (1:10) and Ion chromatography"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"NO2-",
+				"alternateName":"NO2",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"deionized water extraction (1:10) and Ion chromatography"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"P available",
+				"alternateName":"Pav",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"NaHCO3 extraction (1:20) and ICP-MS"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Cu bioavailable",
+				"alternateName":"Cuba",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"DTPA extraction (1:2) and ICP-MS analysis"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Zn bioavailable",
+				"alternateName":"Znba",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"DTPA extraction (1:2) and ICP-MS analysis"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Fe bioavailable",
+				"alternateName":"Feba",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"DTPA extraction (1:2) and ICP-MS analysis"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Mn bioavailable",
+				"alternateName":"Mnba",
+				"propertyID":"",
+				"unitText":"mg/kg",
+				"unitCode":"",
+				"measurementTechnique":"DTPA extraction (1:2) and ICP-MS analysis"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Aggregates size distribution >2000",
+				"alternateName":"Agsd_b",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil wet sieving (different mesh sizes)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Aggregates size distribution 250_2000",
+				"alternateName":"Agsd_c",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil wet sieving (different mesh sizes)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Aggregates size distribution 53_250",
+				"alternateName":"Agsd_d",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil wet sieving (different mesh sizes)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Aggregates size distribution <53",
+				"alternateName":"Agsd_e",
+				"propertyID":"",
+				"unitText":"%",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil wet sieving (different mesh sizes)"
+			},
+			{
+				"@type": "PropertyValue",
+				"name":"Aggregates mean weigth diameter",
+				"alternateName":"AMWD",
+				"propertyID":"",
+				"unitText":"mm",
+				"unitCode":"",
+				"measurementTechnique":"air-dried soil wet sieving (different mesh sizes)"
+			}
+		]
+  }
