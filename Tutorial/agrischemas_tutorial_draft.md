@@ -38,7 +38,7 @@ Agrischemas aims at efficiently reusing established resources, only extending th
 - If a required property doesn't exist in Schema.org / Bioschemas, Agrischemas makes use of the [additionalProperty](https://schema.org/additionalProperty) property in combination with the [PropertyValue](https://schema.org/PropertyValue) type to construct it. **Agrischemas offers a list of recommended properties for findability based on this approach.**
 
 An example metadata instance in Agrischemas could look like this:
-```mermaid;
+```mermaid
 	flowchart LR;
 	A(["Dataset"]) --"@type"-->B(["https://schema.org/Dataset"])
 	A(["Dataset"])--"about"-->C(["Core Entity"])
@@ -61,7 +61,7 @@ An example metadata instance in Agrischemas could look like this:
 	- [minValue](https://schema.org/minValue): The minimum possible value of a specific measurement of a property.
 	- [maxValue](https://schema.org/maxValue): The maximum possible value of a specific measurement of a property.
 
-```mermaid;
+```mermaid
 flowchart LR;
 A("Constructed property")--"@type"-->B(["https://schema.org/PropertyValue"])
 A("Constructed property")--"name"-->C("soil sampling depth")
