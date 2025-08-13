@@ -1,18 +1,6 @@
-```
-To-Do:
--	Write a small descriptive text for each type
--	Describe usage of existing properties for each type
--	Fill out table for remaining properties
--	Build a mermaid diagram example for each type
--	Draft remaining types (pesticides, diseases)
-```
 
 Draft version; 13.08.2025
 # Overview
-Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/), [properties](https://schema.org/Property) and [profiles](https://bioschemas.org/profiles/) and recommends semantic concepts to achieve interoperability.
-One of Agrischemas' possible use-cases is the harmonization of metadata of different Research Data Infrastructures (RDIs) participating in the [FAIRagro consortium](https://fairagro.net/) to power its central [FAIRagro Search Hub](https://search-hub.fairagro.net/).
-This tutorial explains the concepts of the Agrischemas framework, its core entities, a set of recommended properties and their semantic concepts and basic implementation guidance for RDIs that want to adopt it.
-
 ```
 To-Do: 
 - What are the benefits of adopting Agrischemas?
@@ -20,15 +8,11 @@ To-Do:
 	- Showcase mapping/interoperability possibilities
 	- ?
 ```
-
+Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/), [properties](https://schema.org/Property) and [profiles](https://bioschemas.org/profiles/) and recommends semantic concepts to achieve interoperability.
+One of Agrischemas' possible use-cases is the harmonization of metadata of different Research Data Infrastructures (RDIs) participating in the [FAIRagro consortium](https://fairagro.net/) to power its central [FAIRagro Search Hub](https://search-hub.fairagro.net/).
+This tutorial explains the concepts of the Agrischemas framework, its core entities, a set of recommended properties and their semantic concepts and basic implementation guidance for RDIs that want to adopt it.
 
 # Core entities and their Schema.org / Bioschemas types
-Agrischemas uses a set of existing Schema.org / Bioschemas types to represent its core entities:
-	- Crop: A cultivated plant that is somehow related to a dataset.; uses [BioSample](https://bioschemas.org/BioSample).
-	- Soil:  A soil sample that is somehow related to a dataset.; uses [Sample](https://bioschemas.org/Sample).
-	- Plot:  An area of land, somehow related to a dataset, with a particular ownership, land use, or other characteristic.; uses [Place](https://schema.org/Place).
-	- Sensor:  A device, somehow related to a dataset, that observes and measures a physical property of a natural phenomenon or man-made process and converts that measurement into a signal (chemical, electrical or other).; uses [Product](https://schema.org/Product).
-
 ```
 To-Do: 
 	- Agree on definitions of core entities
@@ -37,7 +21,18 @@ To-Do:
 	- ?MedicalCondition?
 	- ?ChemicalSubstance?
 ```
+Agrischemas uses a set of existing Schema.org / Bioschemas types to represent its core entities:
+	- Crop: A cultivated plant that is somehow related to a dataset.; uses [BioSample](https://bioschemas.org/BioSample).
+	- Soil: A soil sample that is somehow related to a dataset.; uses [Sample](https://bioschemas.org/Sample).
+	- Plot: An area of land, somehow related to a dataset, with a particular ownership, land use, or other characteristic.; uses [Place](https://schema.org/Place).
+	- Sensor: A device, somehow related to a dataset, that observes and measures a physical property of a natural phenomenon or man-made process and converts that measurement into a signal (chemical, electrical or other).; uses [Product](https://schema.org/Product).
+
 # Design principles and modeling conventions
+```
+To-Do:
+- Also include less granular approach using https://schema.org/variableMeasured?
+- Add explanation on how to model more granular value shapes
+```
 Agrischemas aims at efficiently reusing established resources, only extending these where necessary. In general, the framework builds on following modeling conventions:
 - Instances of the core entities are linked to [Dataset](https://schema.org/Dataset) via the [about](https://schema.org/about) property.
 - Instances of the core entities are typed via "@type" to the Schema.org / Bioschemas types described in the previous chapter.
@@ -82,12 +77,13 @@ A("Constructed property")--"minValue"-->I("0")
 A("Constructed property")--"maxValue"-->J("60")
 ```
 **Figure 2:** Soil sampling depth as an example of a constructed property.
+
+# Crop
 ```
 To-Do:
-- Also include less granular approach using https://schema.org/variableMeasured?
-- Add explanation on how to model more granular value shapes
+- define controlled vocabularies for existing and constructed properties
 ```
-# Crop
+
 Type: [BioSample](https://bioschemas.org/BioSample)
 AdditionalType: http://purl.obolibrary.org/obo/AGRO_00000325
 
@@ -102,11 +98,16 @@ The following, existing properties are recommended to describe a crop:
 |dateCreated|[Date](https://schema.org/Date) or [DateTime](https://schema.org/DateTime)|The date the crop sample was created.|ONE|
 
 - Usage advice:
-	- For taxonomicRange: In Agrischemas' context the property is meant to express the taxonomic membership of a crop on a species level. Possible levels of modeling granularity are possible:
+	- For **taxonomicRange**: In Agrischemas' context the property is meant to express the taxonomic membership of a crop on a species level. Possible levels of modeling granularity are possible:
 		- Text: Expression of a species name as a string (e.g. "Triticum aestivum"). This is not preferred, as the free text is prone to error and does not offer benefits interoperability wise.
-		- URL: Reference ot a resource describing a species (e.g. "http://aims.fao.org/aos/agrovoc/c_7951"). This is preferred to free text, as it offers additional information, depending on the referenced source, that applications consuming the metadata can use.
-		- Taxon: Reference to a 
+		- URL: Reference ot a resource describing a species (e.g. "http://aims.fao.org/aos/agrovoc/c_7951"). This is preferred to free text, as it offers additional information, depending on the referenced source, that applications consuming the metadata can use. (**recommended**)
+		- Taxon: Reference to an instance of the Bioschemas [Taxon](https://bioschemas.org/types/Taxon/1.0-RELEASE) type. The type offers additional properties to describe a specific taxon, making more detailed information directly in the same metadata instance. (**recommended**)
+		- DefinedTerm: Reference to an instance of the Schema.org [DefinedTerm](https://schema.org/DefinedTerm) type. This option is similiar to the Taxon option, but not as semantically explicit. If DefinedTerm is already used for creating metadata instances, it might be beneficial to choose this option.
+	- For **collectionMethod**: If possible, use a term from a controlled vocabulary here to increase interoperability.
+	- For **locationOfOrigin**: If the location of origin of a crop is one of the plots described in the same metadata instance, it is recommended to reference this plot entity here.
 
+
+Beside these existing properties, Agrischemas recommends the following set of constructed properties to describe a crop:
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |CR_001|variety|||||||
@@ -121,44 +122,50 @@ The following, existing properties are recommended to describe a crop:
 |CR_010|hagberg falling number|Hagberg falling number (HAG)|https://cropontology.org/rdf/CO_321:0000071|second|http://purl.obolibrary.org/obo/UO_0000010|||
 |CR_011|zeleny sedimentation index|Zeleny sedimentation index (ZEL)||milliliter|http://purl.obolibrary.org/obo/UO_0000098|||
 
-
-
-
 # Soil
 Type: [Sample](https://bioschemas.org/Sample)
 AdditionalType: http://aims.fao.org/aos/agrovoc/c_7156
-```
-- To-Do: 
-	- Add info on existing recommended properties
-		- sampling date (dateCreated)
-		- Collection method (Text)
-		- sampling place (locationOfOrigin)
-```
-Existing recommended properties:
+A soil entity represents a speficic soil sample, that is described in a dataset, representative for a bigger unit of land.
+
+The following, existing properties are recommended to describe a soil:
+|Property|Expected type|Description|Cardinality|Controlled Vocabulary|
+|--|--|--|--|--|
+|collectionMethod|[Text](http://schema.org/Text)|Provide information about the conditions and methods of acquisition of soil(samples).|MANY|
+|locationOfOrigin|[GeoCoordinates](https://schema.org/GeoCoordinates) or [Place](https://schema.org/Place) or [Text](http://schema.org/Text)|The location from which the soil(sample) was originally collected.|ONE|
+|dateCreated|[Date](https://schema.org/Date) or [DateTime](https://schema.org/DateTime)|The date the soil sample was created.|ONE|
+
+
+- Usage advice:
+- - For **collectionMethod**: If possible, use a term from a controlled vocabulary here to increase interoperability.
+	- For **locationOfOrigin**: If the location of origin of a soil is one of the plots described in the same metadata instance, it is recommended to reference this plot entity here.
+
+Beside these existing properties, Agrischemas recommends the following set of constructed properties to describe a soil:
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |SO_001|soil texture|Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.|http://aims.fao.org/aos/agrovoc/c_7698|||||
 |SO_002 |pH|Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.|http://aims.fao.org/aos/agrovoc/c_34901|||||
 |SO_003|bulk density|||||||
-|SO_004|sampling date|||||||
-|SO_005|sampling depth|||||||
-|SO_006|sampling top depth|||||||
-|SO_007|sampling bottom depth|||||||
-|SO_008|obstacle depth|||||||
-|SO_009|available water content|Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.|http://opendata.inrae.fr/thesaurusINRAE/c_6446|milimeter|http://purl.obolibrary.org/obo/UO_0000016|||
-|SO_010|reference group|The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS).|http://aims.fao.org/aos/agrovoc/c_89f35c33|||||
+|SO_004|sampling depth|||||||
+|SO_005|sampling top depth|||||||
+|SO_006|sampling bottom depth|||||||
+|SO_007|obstacle depth|||||||
+|SO_008|available water content|Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.|http://opendata.inrae.fr/thesaurusINRAE/c_6446|milimeter|http://purl.obolibrary.org/obo/UO_0000016|||
+|SO_009|reference group|The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS).|http://aims.fao.org/aos/agrovoc/c_89f35c33|||||
 
 # Plot
-Type: [Place](https://schema.org/Place)
-AdditionalType: http://aims.fao.org/aos/agrovoc/c_2894
+**WIP**
 ```
 - To-Do: 
-	- Add info on existing recommended properties
+- Discuss on how to best represent geo information
+		- latitude longitude directly attached
+		- https://schema.org/geo property
+- Discuss on how to best model geo reference systems 
+- Add info on existing recommended properties
 		- latitude
 		- longitude
 ```
-
-
+Type: [Place](https://schema.org/Place)
+AdditionalType: http://aims.fao.org/aos/agrovoc/c_2894
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |PL_001|crop yield|The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time.|http://aims.fao.org/aos/agrovoc/c_10176|dt/ha||||
@@ -167,6 +174,21 @@ AdditionalType: http://aims.fao.org/aos/agrovoc/c_2894
 # Sensor
 Type: [Product](https://schema.org/Product)
 AdditionalType: [Sensor](http://www.w3.org/ns/sosa/Sensor)
+
+
+[manufacturer](https://schema.org/manufacturer "manufacturer")
+[model](https://schema.org/model "model")
+[releaseDate](https://schema.org/releaseDate "releaseDate")
+[productID](https://schema.org/productID "productID")
+A sensor entity represents a speficic sensor, that is described in a dataset, or was used to create measurements in it.
+
+The following, existing properties are recommended to describe a sensor:
+|Property|Expected type|Description|Cardinality|Controlled Vocabulary|
+|--|--|--|--|--|
+|||||
+|||||
+|||||
+
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |SE_001|is hosted by|Relation between a Sensor and the `Platformhat it is mounted on or hosted by.|https://www.w3.org/TR/vocab-ssn/#SOSAisHostedBy|||||
@@ -174,6 +196,7 @@ AdditionalType: [Sensor](http://www.w3.org/ns/sosa/Sensor)
 |SE_003|sensor type|Describes what type of information the sensor measures.||||||
 |SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands||||||
 |SE_004|spectral band|Describes a specific spectral band of a sensor||||||
+
 # Implementation guidance
 ```
 To-Do:
