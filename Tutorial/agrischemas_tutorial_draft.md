@@ -1,9 +1,17 @@
+```
+To-Do:
+-	Write a small descriptive text for each type
+-	Describe usage of existing properties for each type
+-	Fill out table for remaining properties
+-	Build a mermaid diagram example for each type
+-	Draft remaining types (pesticides, diseases)
+```
 
-Draft version; 12.08.2025
+Draft version; 13.08.2025
 # Overview
 Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/), [properties](https://schema.org/Property) and [profiles](https://bioschemas.org/profiles/) and recommends semantic concepts to achieve interoperability.
 One of Agrischemas' possible use-cases is the harmonization of metadata of different Research Data Infrastructures (RDIs) participating in the [FAIRagro consortium](https://fairagro.net/) to power its central [FAIRagro Search Hub](https://search-hub.fairagro.net/).
-This tutorial explains the concepts of the Agrischemas framework, recommended properties and their semantic concepts and basic implementation guidance for RDIs that want to adopt it.
+This tutorial explains the concepts of the Agrischemas framework, its core entities, a set of recommended properties and their semantic concepts and basic implementation guidance for RDIs that want to adopt it.
 
 ```
 To-Do: 
@@ -14,7 +22,7 @@ To-Do:
 ```
 
 
-# Core entities and their Schema.org/Bioschemas types
+# Core entities and their Schema.org / Bioschemas types
 Agrischemas uses a set of existing Schema.org / Bioschemas types to represent its core entities:
 	- Crop: A cultivated plant that is somehow related to a dataset.; uses [BioSample](https://bioschemas.org/BioSample).
 	- Soil:  A soil sample that is somehow related to a dataset.; uses [Sample](https://bioschemas.org/Sample).
@@ -40,13 +48,13 @@ Agrischemas aims at efficiently reusing established resources, only extending th
 An example metadata instance in Agrischemas could look like this:
 ```mermaid
 	flowchart LR;
-	A(["Dataset"]) --"@type"-->B(["schema.org:Dataset"])
+	A(["Dataset"]) --"@type"-->B(["Schema.org: Dataset"])
 	A(["Dataset"])--"about"-->C(["Core Entity"])
 	C(["Core Entity x"]) --"@type"-->D(["Schema.org / Bioschemas type"])
 	C(["Core Entity x"]) --"additionalType"-->E(["Type from external vocabulary"])
 	C(["Core Entity x"]) --"existingProperty"-->F(["..."])
 	C(["Core Entity x"]) --"additionalProperty"-->G([" "])
-	G([" "])--"@type"-->H(["schema.org:PropertyValue"])
+	G([" "])--"@type"-->H(["Schema.org: PropertyValue"])
 	G([" "])--... -->I(["..."])
 ```
 **Figure 1:** General structure of domain specific metadata in a Dataset metadata instance in Agrischemas
@@ -63,7 +71,7 @@ An example metadata instance in Agrischemas could look like this:
 
 ```mermaid
 flowchart LR;
-A("Constructed property")--"@type"-->B(["schema.org:PropertyValue"])
+A("Constructed property")--"@type"-->B(["Schema.org: PropertyValue"])
 A("Constructed property")--"name"-->C("soil sampling depth")
 A("Constructed property")--"description"-->D("The depth at which a sample of soil is collected during a soil sampling process.")
 A("Constructed property")--"propertyID"-->E("AGRO:00000701")
@@ -81,15 +89,24 @@ To-Do:
 ```
 # Crop
 Type: [BioSample](https://bioschemas.org/BioSample)
-AdditionalType:
-```
-- To-Do: 
-	- Add info on existing recommended properties
-		- Species (Taxonomic range)
-		- Collection method (Text)
-		- sampling place (locationOfOrigin)
-		- sampling date (dateCreated)
-```
+AdditionalType: http://purl.obolibrary.org/obo/AGRO_00000325
+
+A crop entity represents a speficic plant or group of plants, sharing the same [taxonomic species](http://aims.fao.org/aos/agrovoc/c_331243), that are described in a dataset.
+The following, existing properties are recommended to describe a crop:
+
+|Property|Expected type|Description|Cardinality|Controlled Vocabulary|
+|--|--|--|--|--|
+|taxonomicRange|[DefinedTerm](http://schema.org/DefinedTerm) or [Taxon](https://bioschemas.org/types/drafts/Taxon) or [Text](http://schema.org/Text) or [URL](http://schema.org/URL)|The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity.|ONE||
+|collectionMethod|[Text](http://schema.org/Text)|Provide information about the conditions and methods of acquisition of crop (samples).|MANY|
+|locationOfOrigin|[GeoCoordinates](https://schema.org/GeoCoordinates) or [Place](https://schema.org/Place) or [Text](http://schema.org/Text)|The location from which the crop (sample) was originally collected.|ONE|
+|dateCreated|[Date](https://schema.org/Date) or [DateTime](https://schema.org/DateTime)|The date the crop sample was created.|ONE|
+
+- Usage advice:
+	- For taxonomicRange: In Agrischemas' context the property is meant to express the taxonomic membership of a crop on a species level. Possible levels of modeling granularity are possible:
+		- Text: Expression of a species name as a string (e.g. "Triticum aestivum"). This is not preferred, as the free text is prone to error and does not offer benefits interoperability wise.
+		- URL: Reference ot a resource describing a species (e.g. "http://aims.fao.org/aos/agrovoc/c_7951"). This is preferred to free text, as it offers additional information, depending on the referenced source, that applications consuming the metadata can use.
+		- Taxon: Reference to a 
+
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |CR_001|variety|||||||
@@ -101,13 +118,15 @@ AdditionalType:
 |CR_007|grain hardiness|Grain hardiness (GH)||percent|http://purl.obolibrary.org/obo/UO_0000187|||
 |CR_008|protein content|Protein content (PC) were measured using NIR grain analyzer.|http://aims.fao.org/aos/agrovoc/c_6251|percent|http://purl.obolibrary.org/obo/UO_0000187|||
 |CR_009|sedimentation test index|Sedimentation test (SDS)|https://cropontology.org/rdf/CO_321:0000147|milliliter|http://purl.obolibrary.org/obo/UO_0000098|||
-|CR_010|grain hardiness|Grain hardiness (GH)||percent|http://purl.obolibrary.org/obo/UO_0000187|||
-|CR_011|grain hardiness|Grain hardiness (GH)||percent|http://purl.obolibrary.org/obo/UO_0000187|||
+|CR_010|hagberg falling number|Hagberg falling number (HAG)|https://cropontology.org/rdf/CO_321:0000071|second|http://purl.obolibrary.org/obo/UO_0000010|||
+|CR_011|zeleny sedimentation index|Zeleny sedimentation index (ZEL)||milliliter|http://purl.obolibrary.org/obo/UO_0000098|||
+
+
 
 
 # Soil
 Type: [Sample](https://bioschemas.org/Sample)
-AdditionalType:
+AdditionalType: http://aims.fao.org/aos/agrovoc/c_7156
 ```
 - To-Do: 
 	- Add info on existing recommended properties
@@ -125,10 +144,13 @@ Existing recommended properties:
 |SO_005|sampling depth|||||||
 |SO_006|sampling top depth|||||||
 |SO_007|sampling bottom depth|||||||
+|SO_008|obstacle depth|||||||
+|SO_009|available water content|Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.|http://opendata.inrae.fr/thesaurusINRAE/c_6446|milimeter|http://purl.obolibrary.org/obo/UO_0000016|||
+|SO_010|reference group|The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS).|http://aims.fao.org/aos/agrovoc/c_89f35c33|||||
 
 # Plot
 Type: [Place](https://schema.org/Place)
-AdditionalType:
+AdditionalType: http://aims.fao.org/aos/agrovoc/c_2894
 ```
 - To-Do: 
 	- Add info on existing recommended properties
@@ -140,12 +162,18 @@ AdditionalType:
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
 |PL_001|crop yield|The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time.|http://aims.fao.org/aos/agrovoc/c_10176|dt/ha||||
+|PL_002|elevation|Altitude, like elevation, is the distance above sea level.|http://aims.fao.org/aos/agrovoc/c_316|meter|http://purl.obolibrary.org/obo/UO_0000008|||
+
 # Sensor
 Type: [Product](https://schema.org/Product)
-AdditionalType:
+AdditionalType: [Sensor](http://www.w3.org/ns/sosa/Sensor)
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
 |--|--|--|--|--|--|--|--|
-|||||||||
+|SE_001|is hosted by|Relation between a Sensor and the `Platformhat it is mounted on or hosted by.|https://www.w3.org/TR/vocab-ssn/#SOSAisHostedBy|||||
+|SE_002|activity type|Describes if the sensor is an active or a passive sensor.||||||
+|SE_003|sensor type|Describes what type of information the sensor measures.||||||
+|SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands||||||
+|SE_004|spectral band|Describes a specific spectral band of a sensor||||||
 # Implementation guidance
 ```
 To-Do:
