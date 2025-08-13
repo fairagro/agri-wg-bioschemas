@@ -40,13 +40,13 @@ Agrischemas aims at efficiently reusing established resources, only extending th
 An example metadata instance in Agrischemas could look like this:
 ```mermaid
 	flowchart LR;
-	A(["Dataset"]) --"@type"-->B(["https://schema.org/Dataset"])
+	A(["Dataset"]) --"@type"-->B(["schema.org:Dataset"])
 	A(["Dataset"])--"about"-->C(["Core Entity"])
 	C(["Core Entity x"]) --"@type"-->D(["Schema.org / Bioschemas type"])
 	C(["Core Entity x"]) --"additionalType"-->E(["Type from external vocabulary"])
 	C(["Core Entity x"]) --"existingProperty"-->F(["..."])
 	C(["Core Entity x"]) --"additionalProperty"-->G([" "])
-	G([" "])--"@type"-->H(["https://schema.org/PropertyValue"])
+	G([" "])--"@type"-->H(["schema.org:PropertyValue"])
 	G([" "])--... -->I(["..."])
 ```
 **Figure 1:** General structure of domain specific metadata in a Dataset metadata instance in Agrischemas
@@ -63,12 +63,12 @@ An example metadata instance in Agrischemas could look like this:
 
 ```mermaid
 flowchart LR;
-A("Constructed property")--"@type"-->B(["https://schema.org/PropertyValue"])
+A("Constructed property")--"@type"-->B(["schema.org:PropertyValue"])
 A("Constructed property")--"name"-->C("soil sampling depth")
 A("Constructed property")--"description"-->D("The depth at which a sample of soil is collected during a soil sampling process.")
-A("Constructed property")--"propertyID"-->E("http://purl.obolibrary.org/obo/AGRO_00000701")
+A("Constructed property")--"propertyID"-->E("AGRO:00000701")
 A("Constructed property")--"unitText"-->F("centimeter")
-A("Constructed property")--"unitCode"-->G("http://purl.obolibrary.org/obo/UO_0000015")
+A("Constructed property")--"unitCode"-->G("UO:0000015")
 A("Constructed property")--"value"-->H("20")
 A("Constructed property")--"minValue"-->I("0")
 A("Constructed property")--"maxValue"-->J("60")
