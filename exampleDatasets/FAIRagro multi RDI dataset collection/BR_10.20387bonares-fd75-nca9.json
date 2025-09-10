@@ -235,7 +235,15 @@
 						"propertyID":"http://aims.fao.org/aos/agrovoc/c_1423211760123",
 						"description":"A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature.",
 						"value":"Türkis"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"harvesting date",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_29464",
+						"description":"Date of harvest.",
+						"value":["1973-10-08","1977-10-10","1982-10-18","1987-10-12","1992-09-22", "1997-09-30", "2002-09-25", "2007-10-02", "2012-09-10", "2017-10-16"]
 						}
+						
 					]
 				},
 				{
@@ -317,6 +325,43 @@
 						"propertyID":"http://aims.fao.org/aos/agrovoc/c_89f35c33",
 						"description":"The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS). ",
 						"value":"Luvic-Phaeozem"
+						}
+					]
+				},
+				{
+					"@context": "https://schema.org/",
+					"@type": "Place",
+					"additionalType":"http://aims.fao.org/aos/agrovoc/c_2894",
+					"geo": {
+						"@type": "GeoShape",
+							"box": "52.31 13.26 52.40 13.38"
+						},
+					"additionalProperty":
+					[
+						{
+						"@type": "PropertyValue",
+						"name":"elevation",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_316",
+						"description":"Altitude, like elevation, is the distance above sea level.",
+						"value":"50",
+						"unitText":"meter",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000008"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"Spatial Reference System",
+						"propertyID":"https://www.commoncoreontologies.org/ont00000275",
+						"description":"A spatial reference system (SRS) or coordinate reference system (CRS) is a framework used to precisely measure locations on the surface of Earth as coordinates.",
+						"value":"EPSG:4326"
+						},
+						{
+						"@type": "PropertyValue",
+						"name":"Plot size",
+						"propertyID":"http://aims.fao.org/aos/agrovoc/c_2893",
+						"description":"The size of a specific plot measured in m².",
+						"value":"4",
+						"unitText":"square meter",
+						"unitCode":"http://purl.obolibrary.org/obo/UO_0000080"
 						}
 					]
 				}

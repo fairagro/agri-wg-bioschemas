@@ -1,5 +1,6 @@
 
-Draft version; 13.08.2025
+
+Draft version; 10.09.2025
 # Overview
 ```
 To-Do: 
@@ -7,6 +8,8 @@ To-Do:
 	- Showcase FAIRagro Search Hub queries
 	- Showcase mapping/interoperability possibilities
 	- ?
+	- What to do with properties that have different units in a metadata instance than in the linked propertyID (e.g. plant height)
+	- 
 ```
 Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/), [properties](https://schema.org/Property) and [profiles](https://bioschemas.org/profiles/) and recommends semantic concepts to achieve interoperability.
 One of Agrischemas' possible use-cases is the harmonization of metadata of different Research Data Infrastructures (RDIs) participating in the [FAIRagro consortium](https://fairagro.net/) to power its central [FAIRagro Search Hub](https://search-hub.fairagro.net/).
@@ -82,17 +85,18 @@ A("Constructed property")--"maxValue"-->J("60")
 ```
 To-Do:
 - define controlled vocabularies for existing and constructed properties
+	- List of plant sample collection methods
+	- List of varieties
 ```
-
 Type: [BioSample](https://bioschemas.org/BioSample)
 AdditionalType: http://purl.obolibrary.org/obo/AGRO_00000325
 
-A crop entity represents a speficic plant or group of plants, sharing the same [taxonomic species](http://aims.fao.org/aos/agrovoc/c_331243), that are described in a dataset.
+A crop entity represents a sample of a specific plant or group of plants, sharing the same [taxonomic species](http://aims.fao.org/aos/agrovoc/c_331243), that are described in a dataset.
 The following, existing properties are recommended to describe a crop:
 
 |Property|Expected type|Description|Cardinality|Controlled Vocabulary|
 |--|--|--|--|--|
-|taxonomicRange|[DefinedTerm](http://schema.org/DefinedTerm) or [Taxon](https://bioschemas.org/types/drafts/Taxon) or [Text](http://schema.org/Text) or [URL](http://schema.org/URL)|The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity.|ONE||
+|taxonomicRange|[DefinedTerm](http://schema.org/DefinedTerm) or [Taxon](https://bioschemas.org/types/drafts/Taxon) or [Text](http://schema.org/Text) or [URL](http://schema.org/URL)|The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity.|ONE|All plant terms with a taxonomic rank of species (https://agrovoc.fao.org/browse/agrovoc/en/page/c_331243) in AGROVOC|
 |collectionMethod|[Text](http://schema.org/Text)|Provide information about the conditions and methods of acquisition of crop (samples).|MANY|
 |locationOfOrigin|[GeoCoordinates](https://schema.org/GeoCoordinates) or [Place](https://schema.org/Place) or [Text](http://schema.org/Text)|The location from which the crop (sample) was originally collected.|ONE|
 |dateCreated|[Date](https://schema.org/Date) or [DateTime](https://schema.org/DateTime)|The date the crop sample was created.|ONE|
@@ -108,21 +112,32 @@ The following, existing properties are recommended to describe a crop:
 
 
 Beside these existing properties, Agrischemas recommends the following set of constructed properties to describe a crop:
-|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
-|--|--|--|--|--|--|--|--|
-|CR_001|variety|||||||
-|CR_002|heading date| Heading date (HD) - days to heading from first January in a given year||day|http://purl.obolibrary.org/obo/UO_0000033|||
-|CR_003|plant height|Plant height (PH) - average plant height pre-harvest|http://aims.fao.org/aos/agrovoc/c_61f3cae5|centimeter|http://purl.obolibrary.org/obo/UO_0000015|||
-|CR_004|sowing period|||||||
-|CR_005|seed weight|Seed weight is a seed morphology trait which is the weight of a seed.|http://aims.fao.org/aos/agrovoc/c_36510|gram|http://purl.obolibrary.org/obo/UO_0000021|||
-|CR_006|specific weight|Specific weight (SW) - specific weight of grains.||kg/hL||||
-|CR_007|grain hardiness|Grain hardiness (GH)||percent|http://purl.obolibrary.org/obo/UO_0000187|||
-|CR_008|protein content|Protein content (PC) were measured using NIR grain analyzer.|http://aims.fao.org/aos/agrovoc/c_6251|percent|http://purl.obolibrary.org/obo/UO_0000187|||
-|CR_009|sedimentation test index|Sedimentation test (SDS)|https://cropontology.org/rdf/CO_321:0000147|milliliter|http://purl.obolibrary.org/obo/UO_0000098|||
-|CR_010|hagberg falling number|Hagberg falling number (HAG)|https://cropontology.org/rdf/CO_321:0000071|second|http://purl.obolibrary.org/obo/UO_0000010|||
-|CR_011|zeleny sedimentation index|Zeleny sedimentation index (ZEL)||milliliter|http://purl.obolibrary.org/obo/UO_0000098|||
+|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue|Controlled vocabulary
+|--|--|--|--|--|--|--|--|--|
+|CR_001|variety|A plant grouping, within a single botanical taxon of the lowest known rank, defined by the reproducible expression of its distinguishing and other genetic characteristics. A formal rank in botanical taxonomic nomenclature|http://aims.fao.org/aos/agrovoc/c_1423211760123|Text or URL|https://schema.org/Text or https://schema.org/URL|/|/|
+|CR_002|developmental stage|Distinct phase within a crops lifecycle.|http://aims.fao.org/aos/agrovoc/c_5959|Text or URL|https://schema.org/Text or https://schema.org/URL|/|/|Terms from the [BBCH-based Plant Phenological Description Ontology](https://agroportal.lirmm.fr/ontologies/PPDO)
+|CR_003|sowing date|Date of sowing.|http://aims.fao.org/aos/agrovoc/c_16208|Date|https://schema.org/Date|/|/|
+|CR_004|heading date| Heading date (HD) - days to heading from first January in a given year|/|day|http://purl.obolibrary.org/obo/UO_0000033|/|/|
+|CR_005|harvesting date|Date of harvest.|http://aims.fao.org/aos/agrovoc/c_29464|Date|https://schema.org/Date|/|/|
+|CR_006|plant height|Plant height (PH) - average plant height pre-harvest|http://aims.fao.org/aos/agrovoc/c_61f3cae5|centimeter|http://purl.obolibrary.org/obo/UO_0000015|||
+|CR_007|seed weight|Weight of a seed.|http://aims.fao.org/aos/agrovoc/c_36510|gram|http://purl.obolibrary.org/obo/UO_0000021|/|/|
+|CR_008|grain weight|A caryopsis fruit morphology trait (TO:0001079) which is the weight of a caryopsis fruit (grain or kernel; PO:0030104).|http://purl.obolibrary.org/obo/TO_0000919|kg/hL|/|/|/
+|CR_009|grain hardiness|Grain hardiness, reflecting a plants ability to survive harsh conditions in percent.|http://aims.fao.org/aos/agrovoc/c_11458|percent|http://purl.obolibrary.org/obo/UO_0000187|/|/|
+|CR_010|protein content|Protein content (PC) were measured using NIR grain analyzer.|http://aims.fao.org/aos/agrovoc/c_6251|percent|http://purl.obolibrary.org/obo/UO_0000187|/|/|
+
+- Usage advice:
+	- For the developmental stage property you can use the [BBCH-based Plant Phenological Description Ontology](https://agroportal.lirmm.fr/ontologies/PPDO). Do so, by using the URI of a growth stage as the value of the developmental stage property.
 
 # Soil
+```
+- To-Do:
+	- Add explanation on how to reference plot object in the same metadata instance
+	- List of soil sample collection methods
+	- Use classification for soil textures
+	- Use classification for soil reference groups
+	- Use classification for soil pH values
+
+```
 Type: [Sample](https://bioschemas.org/Sample)
 AdditionalType: http://aims.fao.org/aos/agrovoc/c_7156
 A soil entity represents a speficic soil sample, that is described in a dataset, representative for a bigger unit of land.
@@ -130,8 +145,8 @@ A soil entity represents a speficic soil sample, that is described in a dataset,
 The following, existing properties are recommended to describe a soil:
 |Property|Expected type|Description|Cardinality|Controlled Vocabulary|
 |--|--|--|--|--|
-|collectionMethod|[Text](http://schema.org/Text)|Provide information about the conditions and methods of acquisition of soil(samples).|MANY|
-|locationOfOrigin|[GeoCoordinates](https://schema.org/GeoCoordinates) or [Place](https://schema.org/Place) or [Text](http://schema.org/Text)|The location from which the soil(sample) was originally collected.|ONE|
+|collectionMethod|[Text](http://schema.org/Text)|Provide information about the conditions and methods of acquisition of soil (samples).|MANY|
+|locationOfOrigin|[GeoCoordinates](https://schema.org/GeoCoordinates) or [Place](https://schema.org/Place) or [Text](http://schema.org/Text)|The location from which the soil (sample) was originally collected.|ONE|
 |dateCreated|[Date](https://schema.org/Date) or [DateTime](https://schema.org/DateTime)|The date the soil sample was created.|ONE|
 
 
@@ -140,62 +155,89 @@ The following, existing properties are recommended to describe a soil:
 	- For **locationOfOrigin**: If the location of origin of a soil is one of the plots described in the same metadata instance, it is recommended to reference this plot entity here.
 
 Beside these existing properties, Agrischemas recommends the following set of constructed properties to describe a soil:
-|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
-|--|--|--|--|--|--|--|--|
-|SO_001|soil texture|Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.|http://aims.fao.org/aos/agrovoc/c_7698|||||
-|SO_002 |pH|Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.|http://aims.fao.org/aos/agrovoc/c_34901|||||
-|SO_003|bulk density|||||||
-|SO_004|sampling depth|||||||
-|SO_005|sampling top depth|||||||
-|SO_006|sampling bottom depth|||||||
-|SO_007|obstacle depth|||||||
-|SO_008|available water content|Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.|http://opendata.inrae.fr/thesaurusINRAE/c_6446|milimeter|http://purl.obolibrary.org/obo/UO_0000016|||
-|SO_009|reference group|The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS).|http://aims.fao.org/aos/agrovoc/c_89f35c33|||||
+|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue|Controlled vocabulary
+|--|--|--|--|--|--|--|--|--|
+|SO_001|soil texture|Soil texture (such as loam, sandy loam or clay) refers to the proportion of sand, silt and clay sized particles that make up the mineral fraction of the soil.|http://aims.fao.org/aos/agrovoc/c_7698|/|/|/|/
+|SO_002|reference group|The World Reference Base (WRB) is an international system for classification of soils. It was designed to cater for any soil in the world. WRB has come forth from an initiative of FAO and UNESCO, supported by UNEP and the International Union of Soil Sciences (IUSS).|http://aims.fao.org/aos/agrovoc/c_89f35c33|/|/|/|/|
+|SO_003|pH|Soil pH is a measure of the acidity or alkalinity of the soil. A pH value is actually a measure of hydrogen ion concentration. It is a ‘reverse’ scale in that a very acid soil has a low pH and a high hydrogen ion concentration.|http://aims.fao.org/aos/agrovoc/c_34901|/|http://purl.obolibrary.org/obo/UO_0000196|0|14|
+|SO_004|bulk density|A sufficiently large volume of soil containing a large number of pores, such that the concept of mean global properties is applicable.|http://aims.fao.org/aos/agrovoc/c_7167|g/cm3|http://purl.obolibrary.org/obo/UO_0000084|/|/|
+|SO_005|sampling depth|The depth at which a sample of soil is collected during a soil sampling process.|http://purl.obolibrary.org/obo/AGRO_00000701|centimeter|http://purl.obolibrary.org/obo/UO_0000015|/|/|
+|SO_006|available water content|Quantity of water present in the soil and usable by plants, classically defined as the difference between moisture at field capacity and moisture at wilting point.|http://opendata.inrae.fr/thesaurusINRAE/c_6446|milimeter|http://purl.obolibrary.org/obo/UO_0000016|/|/|
+|SO_007|organic carbon|Soil organic carbon (SOC) refers to the carbon held within the soil and is expressed as a percentage by weight (gC/Kg soil). Climatic shifts in temperature and precipitation have a major influence on the decomposition and amount of SOC stored within an ecosystem and that released into the atmosphere. Globally, the amount of carbon stored in soils is twice the amount that is stored in all terrestrial plants. Soil organic carbon (SOC) is essential for maintaining fertility, water retention, and plant production in terrestrial ecosystems. The amount of SOC stored within an ecosystem, is dependent on the quantity and quality of organic matter returned to the soil matrix, the soils ability to retain organic carbon (a function of texture and caption exchange capacity), and biotic influences of both temperature and precipitation. The global decline in SOC as a result of deforestation, shifting cultivation and arable cropping have made significant contributions to increased levels of atmospheric carbon dioxide (CO2).|http://aims.fao.org/aos/agrovoc/c_389fe908|gC/Kg|/|/|/|
+|SO_008|total carbon|Content or amount of total carbon in soil, including organic carbon and carbon from lime.|http://aims.fao.org/aos/agrovoc/c_24fb4269|/|/|/|/|
+|SO_009|total nitrogen|Content or amount of total nitrogen in soil.|http://aims.fao.org/aos/agrovoc/c_bdc779f4|/|/|/|/|
+
+
+
+
 
 # Plot
-**WIP**
 ```
-- To-Do: 
-- Discuss on how to best represent geo information
-		- latitude longitude directly attached
-		- https://schema.org/geo property
-- Discuss on how to best model geo reference systems 
-- Add info on existing recommended properties
-		- latitude
-		- longitude
+- To-Do:
+	- Add URIs/Codes for most common geo reference systems to the explanation
 ```
+
 Type: [Place](https://schema.org/Place)
 AdditionalType: http://aims.fao.org/aos/agrovoc/c_2894
-|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
-|--|--|--|--|--|--|--|--|
-|PL_001|crop yield|The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time.|http://aims.fao.org/aos/agrovoc/c_10176|dt/ha||||
-|PL_002|elevation|Altitude, like elevation, is the distance above sea level.|http://aims.fao.org/aos/agrovoc/c_316|meter|http://purl.obolibrary.org/obo/UO_0000008|||
+A plot of land is an area of land with a particular ownership, land use, or other characteristic. A plot is frequently used as the basis for a cadastre or land registration system.
+
+The following, existing properties are recommended to describe a plot:
+|Property|Expected type|Description|Cardinality|Controlled Vocabulary|
+|--|--|--|--|--|
+|name|[Text](https://schema.org/Text)|The name of the place.|MANY|
+|geo|[GeoShape](https://schema.org/GeoShape)|The geo coordinates of the place.|MANY|
+
+- Usage advice:
+	- For **geo**: The geographical coordinates of a [Place](https://schema.org/Place) should be attached to it through a [GeoShape](https://schema.org/GeoShape) object by using the geo property. The GeoShape](https://schema.org/GeoShape) type offers the [box](https://schema.org/box) property to attach a bounding box as a [Text](https://schema.org/Text) where the box is expressed as two points separated by a space character. The first point is the lower corner, the second point is the upper corner.
+
+|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue|Controlled vocabulary
+|--|--|--|--|--|--|--|--|--|
+|PL_001|crop yield|The amount of plant crop (such as cereal, grain or legume) harvested per unit area for a given time.|http://aims.fao.org/aos/agrovoc/c_10176|dt/ha|/|/|/|
+|PL_002|elevation|Altitude, like elevation, is the distance above sea level.|http://aims.fao.org/aos/agrovoc/c_316|meter|http://purl.obolibrary.org/obo/UO_0000008|/|/|
+|PL_003|plot size|The size of a specific plot measured in m².|http://aims.fao.org/aos/agrovoc/c_2893|square meter|http://purl.obolibrary.org/obo/UO_0000080|/|/|
+|PL_004|spatial reference system|A spatial reference system (SRS) or coordinate reference system (CRS) is a framework used to precisely measure locations on the surface of Earth as coordinates.|https://www.commoncoreontologies.org/ont00000275|/|/|/|/|
+|PL_005|spatial resolution|The distance between independent geo measurements.|/|/|/|/|/|
+
+- Usage advice:
+	- For the spatial reference system property, please use EPSG codes (e.g. "EPSG:4326" for WGS 84) where possible. 
+
 
 # Sensor
+**WIP**
+```
+- To-Do:
+	- Find/create list of common sensor platforms (satelite, plane, UAV, etc.)
+	- Find/create list of common sensor types
+	- Find/create list of band categories
+	- Find/create list of spectral bands
+```
 Type: [Product](https://schema.org/Product)
 AdditionalType: [Sensor](http://www.w3.org/ns/sosa/Sensor)
 
-
-[manufacturer](https://schema.org/manufacturer "manufacturer")
-[model](https://schema.org/model "model")
-[releaseDate](https://schema.org/releaseDate "releaseDate")
-[productID](https://schema.org/productID "productID")
-A sensor entity represents a speficic sensor, that is described in a dataset, or was used to create measurements in it.
+A sensor entity represents a specific sensor, that is described in a dataset, or was used to create measurements in it.
+The following, existing properties are recommended to describe a sensor:
 
 The following, existing properties are recommended to describe a sensor:
 |Property|Expected type|Description|Cardinality|Controlled Vocabulary|
 |--|--|--|--|--|
-|||||
-|||||
-|||||
+|[manufacturer](https://schema.org/manufacturer "manufacturer")|[Organization](https://schema.org/Organization)|The manufacturer of the sensor.|MANY|
+|[model](https://schema.org/model "model")|[ProductModel](https://schema.org/ProductModel "ProductModel") or [Text](https://schema.org/Text "Text")|The model of the sensor.|ONE|
+|[releaseDate](https://schema.org/releaseDate "releaseDate")|[Date](https://schema.org/Date)|The release date of a sensor or sensor model.|ONE|
+|[productID](https://schema.org/productID "productID")|[Text](https://schema.org/Text)|The product identifier of the sensor.|MANY|
+|[description](https://schema.org/description "description")|[Text](https://schema.org/Text "Text") or [TextObject](https://schema.org/TextObject "TextObject")|A textual description of the sensor.|MANY|
 
-|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue
-|--|--|--|--|--|--|--|--|
-|SE_001|is hosted by|Relation between a Sensor and the `Platformhat it is mounted on or hosted by.|https://www.w3.org/TR/vocab-ssn/#SOSAisHostedBy|||||
-|SE_002|activity type|Describes if the sensor is an active or a passive sensor.||||||
-|SE_003|sensor type|Describes what type of information the sensor measures.||||||
-|SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands||||||
-|SE_004|spectral band|Describes a specific spectral band of a sensor||||||
+- Usage advice:
+	- for **manufacturer**, please provide at least a name by attaching it to the [Organization](https://schema.org/Organization) object via the [name](https://schema.org/name) property
+	- for **model**, please provide at least a name by representing the value as a [Text](https://schema.org/Text "Text"). If additional information is needed, a [ProductModel](https://schema.org/ProductModel "ProductModel") object can be attached.
+
+
+|ID|name| description |propertyID|unitText|unitCode|minValue|maxValue|Controlled vocabulary
+|--|--|--|--|--|--|--|--|--|
+|SE_001|is hosted by|Relation between a Sensor and the Platform that it is mounted on or hosted by.|https://www.w3.org/TR/vocab-ssn/#SOSAisHostedBy|/|/|/|/|
+|SE_002|activity type|Describes if the sensor is an active or a passive sensor.|?|/|/|/|/|
+|SE_003|sensor type|Describes what type of information the sensor measures.|?|/|/|/|/|
+|SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands.|?|/|/|/|/|
+|SE_004|spectral band|Describes a specific spectral band of a sensor|?|/|/|/|/|
 
 # Implementation guidance
 ```
