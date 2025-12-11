@@ -1,17 +1,17 @@
-Draft version; 03.12.2025
+
+Draft version; 11.12.2025
 
 # Overview
-Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/) and [properties](https://schema.org/Property) and recommends semantic concepts to achieve interoperability. It can be implemented in already existing Schema.org interfaces by mapping domain-specific information available in local data/metadata to structures described in this document. **Agrischemas offers a list of recommended properties for findability based on this approach.**
+Agrischemas is a framework building on Schema.org and [Bioschemas](https://bioschemas.org/) to add agricultural related information to [Dataset](https://schema.org/Dataset) metadata with a focus on increasing its findability. It uses existing [types](https://bioschemas.org/types/) and [properties](https://schema.org/Property) and recommends semantic concepts to achieve interoperability. It can be implemented in already existing Schema.org interfaces by mapping domain-specific information available in local data/metadata to structures described in this document. **Agrischemas offers a list of recommended types and properties for findability based on this approach.**
 
 One of Agrischemas' possible use-cases is the harmonization of metadata of different Research Data Infrastructures (RDIs) participating in the [FAIRagro consortium](https://fairagro.net/) to power its central [FAIRagro Search Hub](https://search-hub.fairagro.net/).
 
-This document explains the concepts of the Agrischemas framework, its core entities, a set of recommended properties enriched with semantic concepts.
+This document explains the concepts of the Agrischemas framework, its core entities, a set of recommended properties enriched with semantic concepts for each of them.
 
 # Design principles and modeling conventions
 Agrischemas aims at efficiently reusing established resources, only extending these where necessary. In general, the framework builds on following modeling conventions:
-- Agrischemas uses a set of existing Schema.org / Bioschemas types to represent its core entities. The corresponding type is listed for each core entity in its chapter.
+- Agrischemas uses a set of existing Schema.org / [Bioschemas](https://bioschemas.org/types/) types to represent its core entities. The corresponding type for each core entity is listed in its chapter. Instances of the core entities are typed via the "@type" property.
 - Instances of the core entities are linked to [Dataset](https://schema.org/Dataset) via the [about](https://schema.org/about) property.
-- Instances of the core entities are typed via "@type" to the Schema.org / Bioschemas types described in the previous chapter.
 - For semantic enrichment, instances of the core entities are further typed via the [additionalType](https://schema.org/additionalType) property, referencing specific semantic concepts.
 - Agrischemas makes use of the [additionalProperty](https://schema.org/additionalProperty) property in combination with the [PropertyValue](https://schema.org/PropertyValue) type to construct properties increasing the findability of datasets.
 - By using the [propertyID](https://schema.org/propertyID) property, these constructed properties are semantically enriched.
@@ -151,22 +151,59 @@ The following, existing properties are recommended to describe a sensor:
 |ID|name| description |propertyID|unitText|unitCode|minValue|maxValue|Controlled vocabulary
 |--|--|--|--|--|--|--|--|--|
 |SE_001|is hosted by|Relation between a Sensor and the Platform that it is mounted on or hosted by.|https://www.w3.org/TR/vocab-ssn/#SOSAisHostedBy|/|/|/|/|
-|SE_002|activity type|Describes if the sensor is an active or a passive sensor.|?|/|/|/|/|
-|SE_003|sensor type|Describes what type of information the sensor measures.|?|/|/|/|/|
-|SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands.|?|/|/|/|/|
-|SE_004|spectral band|Describes a specific spectral band of a sensor|?|/|/|/|/|
+|SE_002|activity type|Describes if the sensor is an active or a passive sensor.|/|/|/|/|/|"Active" or "Passive"
+|SE_003|sensor type|Describes what type of information the sensor measures.|/|/|/|/|/|<ul><li>[Radar](http://aims.fao.org/aos/agrovoc/c_24071)</li><li>[LiDAR](http://aims.fao.org/aos/agrovoc/c_c3ea7f1d)</li><li>[Optical sensor](http://aims.fao.org/aos/agrovoc/c_08dded27)</li><li>[Thermal Infrared Sensor](http://opendata.inrae.fr/thesaurusINRAE/c_17410)</li><li>Atmospheric sounder</li></ul>
+|SE_004|band category|Describes if a sensor uses single, multi or hyper spectral bands.|/|/|/|/|/|<ul><li>single-band</li><li>multi-band</li><li>hyper-spectral</li><li> broadband</li></ul>
+|SE_004|spectral band|Describes a specific spectral band of a sensor|/|/|/|/|/|/
 
 
 # Agricultural process
 *WIP*
 - **Definition**: A planned process which occurs in an agricultural field.
 	- [Definition source](http://purl.obolibrary.org/obo/AGRO_00002071)
- - **Type:** [LabProtocol](https://bioschemas.org/LabProtocol)
+ - **Type:** [LabProcess](https://bioschemas.org/LabProcess)
  - **Additional type:** [Agricultural process](http://purl.obolibrary.org/obo/AGRO_00002071)
 
-An agricultural process entity represents a specific sensor, that is described in a dataset, or was used to create measurements in it.
+An agricultural process entity represents a specific agricultural process, that is described in a dataset, or was used was part of its creation.
 
-# Pesticides
-*WIP*
-# Diseases
-*WIP*
+To express an agricultural process, please create a  [LabProcess](https://bioschemas.org/LabProcess) object in the metadata instance and attach it to a [Dataset](https://schema.org/) object via the https://schema.org/about property. This describes a single execution of the process.
+To describe the protocol that the process follows, please use the [LabProtocol](https://bioschemas.org/LabProtocol) type and attach it to a process via the [executesLabProtocol](https://bioschemas.org/types/LabProcess/0.1-DRAFT#executesLabProtocol) property. Link the [LabProtocol](https://bioschemas.org/LabProtocol) object to one of the recommended resources from this specificiation via the [intendedUse](https://bioschemas.org/types/LabProtocol/0.5-DRAFT#intendedUse) property:
+
+Here you can find an example of the described structure:
+```
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "about": [
+    {
+      "@context": "https://bioschemas.org/",
+      "@type": "LabProcess",
+      "additionalType":"http://purl.obolibrary.org/obo/AGRO_00002071",
+      "executesLabProtocol":
+	      {
+		      "@type": "LabProtocol",
+		      "intendedUse":"http://purl.obolibrary.org/obo/AGRO_00020004"
+		  }
+    }
+  ]
+}
+```
+Use one of the following recommendations as a value for the intendedUse property, if you want to express one of the following standard agricultural processes:
+
+
+
+|Process|References|
+|--|--|
+|Irrigation|<ul><li>For general irrigation processes please use http://purl.obolibrary.org/obo/AGRO_00000006</li><li>For more specific types of irrigation, please use one of its respective sub classes.</li></ul>|
+|Tillage| <ul><li>For general tillage processes please use http://purl.obolibrary.org/obo/AGRO_01000015</li><li>For more specific types of tillage, please use one of its respective sub classes.</li></ul>|
+|Pest control|<ul><li>For general pest control processes please use http://purl.obolibrary.org/obo/AGRO_00000023</li><li>For more specific types of pest control please its respective sub classes.</li></ul>
+|Fertilizer application |<ul><li>For fertilizer application processes please use http://purl.obolibrary.org/obo/AGRO_01000000.</li></ul>
+
+# Feedback
+If you would like to provide feedback to Agrischemas, e.g. for proposing new core entities, new properties important for findability,  on definitions in the specification or to recommend additional semantic concepts for values, please use one of the following templates to create an issue in our Github repository. 
+- Template core entity
+- Template new property
+- Template definitions 
+- Template semantic concept values
+
+ Issues will be discussed in the Agrischemas Working Group. If you are interested in joining the group, please contact its [mailinglist](mailto:agri-wg-bioschemas@listserv.dfn.de). 
