@@ -158,7 +158,6 @@ The following, existing properties are recommended to describe a sensor:
 
 
 # Agricultural process
-*WIP*
 - **Definition**: A planned process which occurs in an agricultural field.
 	- [Definition source](http://purl.obolibrary.org/obo/AGRO_00002071)
  - **Type:** [LabProcess](https://bioschemas.org/LabProcess)
